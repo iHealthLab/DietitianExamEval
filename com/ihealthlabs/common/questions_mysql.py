@@ -2,7 +2,7 @@ from collections import defaultdict
 
 import sqlalchemy
 
-from com.ihealthlabs.common.conn_mysql import ClientMysql
+from conn_mysql import ClientMysql
 
 
 class QuestionsMysql:
@@ -27,7 +27,16 @@ class QuestionsMysql:
         return question_dict
 
     def get_prompt_string(self, dictionary):
-        prompt = "Answer the following multiple choice questions using the format of 1.x with no explanation: \n"
+        prompt = "Answer the following multiple choice questions using the format of 1.x n with no explanation: \n"
+        count = 1
+        for key, value in dictionary.items():
+            prompt += str(count) + ". " + value['question'] + "\n" + value['choices'] + "\n"
+            count += 1
+        # print(prompt)
+        return prompt
+
+    def get_prompt_string_llama(self, dictionary):
+        prompt = "Answer the following multiple choice questions using the format of 1.x (where 1 is the question number and x is the choice you made, letter only and no need to add space between question number and your choice) with no explanation, please only choose one answer for each question: \n"
         count = 1
         for key, value in dictionary.items():
             prompt += str(count) + ". " + value['question'] + "\n" + value['choices'] + "\n"
@@ -39,12 +48,16 @@ class QuestionsMysql:
         result_string = "1." + answer_string.split('1.', 1)[-1]
         choices = self.extract_choices(result_string)
         correct = 0
+        wrong_questions = []
         i = 0
         for key, value in question_dict.items():
             if value['answer'] == choices[i]:
                 correct += 1
+            else: 
+                wrong_questions.append(i+1)
             i += 1
         size = len(question_dict)
+        print(wrong_questions)
         return str(correct / size * 100) + "%"
 
     def extract_choices(self, choice_string):

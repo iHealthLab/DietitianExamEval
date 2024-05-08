@@ -5,8 +5,8 @@ import pymysql.cursors
 from sqlalchemy import create_engine
 from sqlalchemy.exc import IntegrityError
 
-from com.ihealthlabs.common.config import env
-from com.ihealthlabs.common.log import Log
+from config import env
+from log import Log
 
 
 class ClientMysql:
