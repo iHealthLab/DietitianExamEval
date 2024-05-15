@@ -2,8 +2,6 @@ from config import env
 from questions_mysql import QuestionsMysql
 
 import ollama
-import asyncio
-from anthropic import AsyncAnthropic
 
 qsql = QuestionsMysql()
 question_dict = qsql.get_questions()
@@ -21,25 +19,22 @@ scorellama = qsql.get_score(responsellama, question_dict)
 print("llama3: " + scorellama)
 
 '''
-# Connect to Anthropic Claude API
-client = AsyncAnthropic(api_key=env.str("ANTHROPIC_API_KEY"),)
+# calling llama api
+import json
+from llamaapi import LlamaAPI
 
-async def main() -> None:
-    async with client.messages.stream(
-        max_tokens=1024,
-        messages=[{"role": "user", "content": qsql.get_prompt_string(question_dict)}],
-        # messages=[{"role": "user", "content": "Why sky is blue?"}],
-        model="claude-3-opus-20240229",
-        # stream=True,
-    ) as stream:
-        async for text in stream.text_stream:
-            print(text, end="", flush=True)
-        print()
-    # print(message.content)
-    res = await stream.get_final_text()
+# Initialize the SDK
+llama = LlamaAPI(env.str("LLAMA_API_KEY"))
 
-    scoreClaude = qsql.get_score(res, question_dict)
-    print("Claude 3 Opus: " + scoreClaude)
+# Build the API request
+api_request_json = {
+    "messages": [
+        {"role": "user", "content": qsql.get_prompt_string_llama(question_dict)},
+    ],
+    "stream": False,
+}
 
-asyncio.run(main())
+# Execute the Request
+response = llama.run(api_request_json)
+print(json.dumps(response.json(), indent=2))
 '''

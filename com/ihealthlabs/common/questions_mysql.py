@@ -27,7 +27,7 @@ class QuestionsMysql:
         return question_dict
 
     def get_prompt_string(self, dictionary):
-        prompt = "Answer the following multiple choice questions using the format of 1.x n with no explanation: \n"
+        prompt = "Answer the following multiple choice questions using the format of 1.x with no explanation: \n"
         count = 1
         for key, value in dictionary.items():
             prompt += str(count) + ". " + value['question'] + "\n" + value['choices'] + "\n"
@@ -36,11 +36,11 @@ class QuestionsMysql:
         return prompt
 
     def get_prompt_string_llama(self, dictionary):
-        prompt = "Answer the following multiple choice questions using the format of 1.x (where 1 is the question number and x is the choice you made, letter only and no need to add space between question number and your choice) with no explanation, please only choose one answer for each question: \n"
-        count = 1
+        prompt = "Answer the following multiple choice questions using the format of <question_number>.<your choice> (for the choice you made, please include the letter only and no need to add space between question number and your choice) with no explanation, please only choose one answer for each question: \n"
+        #count = 1
         for key, value in dictionary.items():
-            prompt += str(count) + ". " + value['question'] + "\n" + value['choices'] + "\n"
-            count += 1
+            prompt += str(value['question_number']) + ". " + value['question'] + "\n" + value['choices'] + "\n"
+            #count += 1
         # print(prompt)
         return prompt
 
