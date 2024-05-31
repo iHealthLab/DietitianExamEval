@@ -40,26 +40,39 @@ class QuestionsMysql:
             prompt += str(value['question_id']) + ". " + value['question'] + "\n" + value['choices'] + "\n"
         '''
         return prompt
+    
 
-    def get_prompt_string_llama(self, dictionary):
-        prompt = "Answer the following multiple choice questions using the format of <question_number>.<your choice> (for the choice you made, please include the letter only and no need to add space between question number and your choice) with no explanation, please only choose one answer for each question: \n"
-        #count = 1
-        for key, value in dictionary.items():
-            prompt += str(value['question_id']) + ". " + value['question'] + "\n" + value['choices'] + "\n"
-            #count += 1
-        # print(prompt)
+    def get_prompt_string_llama(self, dictionary, startIndex, batch_size):
+        prompt = "Answer the following multiple choice questions using the format of <question_number>.<your_choice>, where `<your_choice>` is a letter (A, B, C, or D) and nothing else. No space between question number and your choice. Please skip the preamble, go straight to the answers: "
+        for i in range(startIndex, startIndex + batch_size):
+            if(i > len(dictionary)):
+                return prompt
+            question = dictionary[i]
+            prompt += str(question['question_id']) + ". " + question['question'] + " " + question['choices'] + " "
+        #prompt += "Please respond to each question with a single letter (a, b, c, or d) indicating your choice."
         return prompt
+
+
 
     def get_score(self, answer_string, question_dict):
         result_string = "1." + answer_string.split('1.', 1)[-1]
-        print(result_string)
+
+        '''
+        # For llama only, to skip the premables
+        pattern = r'\d+\.\s*[a-dA-D]'
+        matches = re.findall(pattern, result_string)
+        formatted_answers = '\n'.join(matches)
+        print(formatted_answers)
+        choices = self.extract_choices(formatted_answers)
+        '''
+        
         choices = self.extract_choices(result_string)
         print(len(choices))
         correct = 0
         wrong_questions = {}
         i = 0
         for key, value in question_dict.items():
-            if value['answer'] == choices[i]:
+            if value['answer'] == choices[i] or value['answer'] == choices[i].upper():
                 correct += 1
             else: 
                 wrong_questions[i+1] = choices[i]
@@ -70,31 +83,13 @@ class QuestionsMysql:
             print("{0}: {1}".format(key, value))
         return str(correct / size * 100) + "%"
 
-    '''
-    def extract_choices(self, choice_string):
-        choices = []
-        lines = choice_string.split('\n')
-        for line in lines:
-            line = line.strip()
-            match = re.search(r'^\d+\.\s*([A-D])', line)
-            if match:
-                choices.append(match.group(1).lower())  # Convert to lowercase for consistency
-        return choices
-    '''
-
+   
     def extract_choices(self, choice_string):
         # Extract lines and then the choices
         lines = choice_string.strip().split('\n')
         choices = [line.split('.')[1].strip() for line in lines]
         return choices
     
-    '''
-    def extract_choices(self, choice_string):
-        # Split the string into parts on spaces
-        parts = choice_string.split()
-        choices = [part[-1] for part in parts]
-        return choices
-    '''
 
 if __name__ == '__main__':
     qsql = QuestionsMysql()
