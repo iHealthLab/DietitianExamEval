@@ -67,6 +67,6 @@ if __name__ == '__main__':
     score_llama = qsql.get_score(response_llama, question_dict)
 
     print("\n")
-    print('GPT 4:' + score_gpt4)
+    print('GPT 4: ' + score_gpt4)
     print('Claude 3 Opus: ' + score_claude)
     print('Llama 3: ' + score_llama)

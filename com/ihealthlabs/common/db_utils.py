@@ -42,18 +42,38 @@ class DBUtils:
             ) 
         '''.format(table))
 
-    def add_data(self, table_name, question_list):
+    # Add data to CDCESQuestion table
+    def add_cdces_data(self, table_name, question_list):
         table = table_name
         for question in question_list:
             query = "INSERT INTO " + table + " (question, choices, answer) VALUES ('" + question.question_content + "', '" + question.choices + "', '" + question.answer + "')"
             sql_query = sqlalchemy.text(query)
             self.mysql_client.execute(sql_query)
+    
+    # Add data to RDQuestions table
+    def add_rd_data(self, table_name, question_list):
+        table = table_name
+        for question in question_list:
+            query = "INSERT INTO " + table + " (question, choices, answer, explanation, difficulty_level, answer_references) VALUES ('" + question.question_content + "', '" + question.choices + "', '" + question.answer + "', '" + question.explanation + "', '" + question.difficulty_level + "', '" + question.references + "')"
+            sql_query = sqlalchemy.text(query)
+            self.mysql_client.execute(sql_query)
         
 
 if __name__ == '__main__':
+    
+    # Add CDCES Questions
+    '''
     db = DBUtils()
     question_json = Json_to_question()
-    with open('/Users/mohanqi/Desktop/Questions/Toolkit2.json') as json_file:
+    with open('/Users/mohanqi/Desktop/Questions/Toolkit4.json') as json_file:
         data = json.load(json_file)
     questions = data['questions']
-    db.add_data('CDCESQuestions', question_json.parseJson(questions))
+    db.add_cdces_data('CDCESQuestions', question_json.parseJson(questions))
+    '''
+
+    # Add RD Questions
+    db = DBUtils()
+    question_json = Json_to_question()
+    with open('/Users/mohanqi/Desktop/Questions/questions_rd_test_2.json') as json_file:
+        data = json.load(json_file)
+    db.add_rd_data('RDQuestions', question_json.parseRdJson(data))

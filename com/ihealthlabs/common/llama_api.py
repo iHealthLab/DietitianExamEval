@@ -7,6 +7,7 @@ qsql = QuestionsMysql()
 question_dict = qsql.get_questions()
 
 # Connect to ollama
+
 response = ollama.chat(model='llama3', messages=[
   {
     'role': 'user',
