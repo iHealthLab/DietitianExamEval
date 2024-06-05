@@ -65,7 +65,7 @@ class QuestionsMysql:
         print(formatted_answers)
         choices = self.extract_choices(formatted_answers)
         '''
-        
+
         choices = self.extract_choices(result_string)
         print(len(choices))
         correct = 0
@@ -86,7 +86,9 @@ class QuestionsMysql:
    
     def extract_choices(self, choice_string):
         # Extract lines and then the choices
+        print("choice_string: " + choice_string)
         lines = choice_string.strip().split('\n')
+        print(lines)
         choices = [line.split('.')[1].strip() for line in lines]
         return choices
     
@@ -94,10 +96,27 @@ class QuestionsMysql:
 if __name__ == '__main__':
     qsql = QuestionsMysql()
     '''
-    with open('gpt_answer_RD_questions.txt', 'r') as file:
+    question_dict = qsql.get_questions()
+    with open('gpt_answer_RD_questions_llama.txt', 'r') as file:
         choice_string = file.readlines()
     print(choice_string)
-    print(qsql.extract_choices(choice_string))
-    print(len(qsql.extract_choices(choice_string)))
+    correct = 0
+    wrong_questions = {}
+    i = 0
+    for key, value in question_dict.items():
+        if value['answer'] == choice_string[i] or value['answer'] == choice_string[i].upper():
+            correct += 1
+        else: 
+            wrong_questions[i+1] = choice_string[i]
+        i += 1
+    size = len(question_dict)
+    print("Wrong questions: \n")
+    for key, value in wrong_questions.items():
+        print("{0}: {1}".format(key, value))
+    print(str(correct / size * 100) + "%")
+
+    #print(qsql.extract_choices(choice_string))
+    #print(len(qsql.extract_choices(choice_string)))
     '''
+
    

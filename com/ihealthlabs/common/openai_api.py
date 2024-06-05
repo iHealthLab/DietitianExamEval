@@ -18,6 +18,7 @@ class OpenAIAPI(object):
             model=model_str,
             messages=[{"role": "user", "content": question}],
             stream=True,
+            temperature=0,
         )
         for chunk in stream:
             if chunk.choices[0].delta.content is not None:
@@ -34,9 +35,10 @@ if __name__ == '__main__':
     # Prompt the questions in a batch of 20 
     for startIndex in range (1, len(question_dict) + 1, 20):
         prompt_str = qsql.get_prompt_string(question_dict, startIndex, 20)
-        response4 += api.ask_chatgpt(prompt_str, "gpt-4")
+        print(prompt_str)
+        response4 += api.ask_chatgpt(prompt_str, "gpt-4o")
         response4 += "\n"
-        time.sleep(5)
+        time.sleep(2)
 
     with open('gpt_answer_RD_questions.txt', 'w') as file:
         file.write(response4 + "\n")
@@ -45,6 +47,6 @@ if __name__ == '__main__':
     score4 = qsql.get_score(response4, question_dict)
     #score35 = qsql.get_score(response35, question_dict)
     print("\n")
-    print('gpt4 :' + score4)
+    print('gpt4o:' + score4)
     #print('gpt3.5 :' + score35)
     

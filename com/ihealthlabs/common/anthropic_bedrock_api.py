@@ -16,7 +16,7 @@ class AnthropicBedRockAPI(object):
         native_request = {
             "anthropic_version": "bedrock-2023-05-31",
             "max_tokens": 512,
-            "temperature": 0.5,
+            "temperature": 0,
             "messages": [
                 {
                     "role": "user",
@@ -49,13 +49,13 @@ if __name__ == '__main__':
     question_dict = qsql.get_questions()
     response_claude = ""
     
-    for startIndex in range (1, len(question_dict) + 1, 20):
-        prompt_str = qsql.get_prompt_string(question_dict, startIndex, 20)
-        #print(prompt_str)
+    for startIndex in range (1, len(question_dict) + 1, 1):
+        prompt_str = qsql.get_prompt_string(question_dict, startIndex, 1)
+        print(prompt_str)
         response_claude += api.ask_claude(prompt_str, "anthropic.claude-3-opus-20240229-v1:0")
         response_claude += "\n"
         #print(response_claude)
-    
+    print(response_claude)
     score_claude = qsql.get_score(response_claude, question_dict)
 
     print("\n")
