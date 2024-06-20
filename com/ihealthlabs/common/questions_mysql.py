@@ -1,5 +1,4 @@
 from collections import defaultdict
-import re
 
 import sqlalchemy
 
@@ -12,7 +11,7 @@ class QuestionsMysql:
         self.mysql_client = ClientMysql()
 
     def get_questions(self):
-        query = sqlalchemy.text('select * from RDQuestions')
+        query = sqlalchemy.text('select * from CDCESQuestions')
         data = self.mysql_client.execute(query)
         question_dict = defaultdict()
         rows = data.fetchall()
@@ -24,10 +23,28 @@ class QuestionsMysql:
                 'answer': d[3]
             }
         return question_dict
+    
+    def get_RD_questions(self):
+        query = sqlalchemy.text('select * from RDQuestions')
+        data = self.mysql_client.execute(query)
+        question_dict = defaultdict()
+        rows = data.fetchall()
+        for d in rows:
+            question_dict[d[0]] = {
+                'question_id': d[0],
+                'question': d[1],
+                'choices': d[2],
+                'answer': d[3],
+                'explanation': d[4],
+                'difficulty_level': d[5],
+                'answer_references': d[6]
+            }
+        return question_dict
 
-    # Get prompt in a batch of 20 questions
+    # Get prompt in a batch of questions
     def get_prompt_string(self, dictionary, startIndex, batch_size):
         #prompt = "Answer the following multiple choice questions using the format of 1.x with no explanation: \n"
+        #prompt = "Instructions: Solve the following multiple choice question in a step-by-step fashion, starting by summarizing the available information. Output a single option from as the final answer and enclosed by xml tags <questionNumber></questionNumber>.<answer></answer>."
         prompt = "Answer the following multiple choice questions using the format of <question_number>.<your choice> with no explanation and your choice will be letter only (for example: 1.a or 2.B, no space between question number and your choice): \n"
         for i in range(startIndex, startIndex + batch_size):
             #if(i > 160):

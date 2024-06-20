@@ -1,47 +1,82 @@
 import google.generativeai as genai
-import os
 
 from config import env
 from questions_mysql import QuestionsMysql
 
 
 class GeminiAIAPI(object):
+    """
+    This class connects to Gemini API directly.
+    """
 
     def __init__(self):
         self._client = genai.configure(api_key=env.str("GEMINI_API_KEY"))
-
-    def ask_gemini(self, question, model_str):
+    
+    def ask_gemini(self, question, model_str, temp):
         res = ""
         model = genai.GenerativeModel(model_str)
-        response = model.generate_content(question)
-        print(response.text)
-        '''
-        for chunk in stream:
-            if chunk.choices[0].delta.content is not None:
-                print(chunk.choices[0].delta.content, end="")
-                res += chunk.choices[0].delta.content
-        return res
-        '''
+        safety_settings = [
+            {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_HARASSMENT",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                "threshold": "BLOCK_NONE"
+            },
+            {
+                "category": "HARM_CATEGORY_HATE_SPEECH",
+                "threshold": "BLOCK_NONE"
+            },
+        ]
+        response = model.generate_content(question, generation_config=genai.types.GenerationConfig(temperature=temp), safety_settings=safety_settings)
+        #print(response.text)
 
+        for chunk in response:
+            print(chunk.text)
+            res += chunk.text
+        return res
 
 if __name__ == '__main__':
     api = GeminiAIAPI()
     qsql = QuestionsMysql()
-    question_dict = qsql.get_questions()
-    prompt_str = "Write a story about a magic backpack."
-    response = api.ask_gemini(prompt_str, 'gemini-1.5-flash')
+    # Connect to RD Exam Questions
+    question_dict = qsql.get_RD_questions()
+    # Connect to CDCES Exam Questions
+    # question_dict = qsql.get_questions()
+
+    # Asks the incorrect questions with choices only, allowing explanation and no restriction in answer format
     '''
-    response4 = "\n"
-    # Prompt the questions in a batch of 20 
-    for startIndex in range (1, len(question_dict) + 1, 20):
-        prompt_str = qsql.get_prompt_string(question_dict, startIndex, 20)
-        response4 += api.ask_chatgpt(prompt_str, "gpt-4")
-        response4 += "\n"
+    prompt_str = ""
+    question_list = [139, 245, 930, 447]
+    for i in question_list:
+        question = question_dict[i]
+        
+        with open('gemini_1.5Pro_answer_incorrect_RD_questions_with_explanation.txt', 'r') as file:
+            content = file.read()
+
+        prompt_str = question['question'] + "\n" + question['choices']
+        question_str = str(question['question_id']) + ". " + prompt_str + "\n\nDifficulty Level: " + question['difficulty_level'] + "\n\nCorrect Answer: " + question['answer'] + "\n\nExplanation: " + question['explanation'] + "\n\nReferences: " + question['answer_references'] + "\n\nGemini 1.5 Pro Response: \n"
+        response = api.ask_gemini(prompt_str, 'gemini-1.5-pro', 0)
+        with open('gemini_1.5Pro_answer_incorrect_RD_questions_with_explanation.txt', 'w') as file:
+            file.write(content + question_str + "\n" + response + "\n" + "-"*100 + "\n\n\n")
+
+    '''
+
+    # Asks all questions from the question set with certain answer format
+    response = "\n"
+    # Prompt the questions in a batch of 1, you can adjust the question number in each batch 
+    for startIndex in range (1, len(question_dict) + 1, 1):
+        prompt_str = qsql.get_prompt_string(question_dict, startIndex,  1)
+        # Use the Gemini 1.5 Pro model and set temperature to 0.
+        response += api.ask_gemini(prompt_str, 'gemini-1.5-pro', 0)
+
    
-    #response35 = api.ask_chatgpt(prompt_str, "gpt-3.5-turbo")
-    score4 = qsql.get_score(response4, question_dict)
-    #score35 = qsql.get_score(response35, question_dict)
+    score = qsql.get_score(response, question_dict)
     print("\n")
-    print('gpt4 :' + score4)
-    #print('gpt3.5 :' + score35)
-    '''
+    print('Gemini 1.5 Pro :' + score)
+    

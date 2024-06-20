@@ -6,11 +6,14 @@ import json
 from questions_mysql import QuestionsMysql
 
 class LlamaBedRockAPI(object):
+    """
+    This class connects to Amazon BedRock API for Llama AI.
+    """
     def __init__(self):
         # Create a Bedrock Runtime client in the AWS Region of your choice.
         self.client = boto3.client("bedrock-runtime", region_name="us-west-2")
     
-    def ask_llama(self, question, model_id):
+    def ask_llama(self, question, model_id, temp):
         # Embed the message in Llama 3's prompt format.
         prompt = f"""
         <|begin_of_text|>
@@ -25,7 +28,7 @@ class LlamaBedRockAPI(object):
             "prompt": prompt,
             # Optional inference parameters:
             "max_gen_len": 512,
-            "temperature": 0.5,
+            "temperature": temp,
             "top_p": 0.9,
         }
 
@@ -48,21 +51,30 @@ if __name__ == '__main__':
     api = LlamaBedRockAPI()
 
     qsql = QuestionsMysql()
-    question_dict = qsql.get_questions()
+    # Connect to RD Exam Questions
+    question_dict = qsql.get_RD_questions()
+    # Connect to CDCES Exam Questions
+    # question_dict = qsql.get_questions()
+
     response_llama = ""
     
+    # Prompt the questions in a batch of 20, you can adjust the question number in each batch
     for startIndex in range (1, len(question_dict) + 1, 20):
         prompt_str = qsql.get_prompt_string_llama(question_dict, startIndex, 20)
         #print(prompt_str)
-        response_llama += api.ask_llama(prompt_str, "meta.llama3-8b-instruct-v1:0")
+        # Use the llama 3 8B model and set temperature to 0.
+        response_llama += api.ask_llama(prompt_str, "meta.llama3-8b-instruct-v1:0", 0)
         response_llama += "\n"
         #print(response_llama)
-    
+
+    # Save the LLM response to a txt file    
+    '''
     with open('gpt_answer_RD_questions_llama.txt', 'w') as file:
         file.write(response_llama + "\n")
+    '''
 
-    score_claude = qsql.get_score(response_llama, question_dict)
+    score_llama = qsql.get_score(response_llama, question_dict)
 
     print("\n")
-    print('Llama 3 8B: ' + score_claude)
+    print('Llama 3 8B: ' + score_llama)
 

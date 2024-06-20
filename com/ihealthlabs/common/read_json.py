@@ -18,6 +18,12 @@ class question:
         self.difficulty_level = difficulty_level
         self.references = references
 
+    def __init__(self, question_content, choices, answer, explanation):
+        self.question_content = question_content
+        self.choices = choices
+        self.answer = answer
+        self.explanation = explanation
+
 
     def toString(self):
         string = ""
@@ -131,15 +137,53 @@ class Json_to_question:
             question_list.append(question_obj)
             #print(question_obj.toString())
         return question_list
+    
+
+    def parseADCESJson(self, questions):
+        question_list = []
+
+        for ques in questions:
+            for key in ques:
+                if key == "question":
+                    question_content = ques[key]
+                    escaped_content = ""
+                    for char in question_content:
+                        if char == "'" or char == "(" or char ==")":
+                            escaped_content += '\\'
+                        escaped_content += char
+                elif key == "choices":
+                    options = ""
+                    options += "A. " + ques[key][0] + " "
+                    options += "B. " + ques[key][1] + " "
+                    options += "C. " + ques[key][2] + " "
+                    options += "D. " + ques[key][3] + " "
+                    escaped_options = ""
+                    for char in options:
+                        if char == "'":
+                            escaped_options += '\\'
+                        escaped_options += char
+                elif key == "correct_answer":
+                    answer = ques[key]
+                elif key == "explanation":
+                    explanation = ques[key][0]
+                    escaped_exp = ""
+                    for char in explanation:
+                        if char == "'":
+                            escaped_exp += '\\'
+                        escaped_exp += char
+            question_obj = question(escaped_content, escaped_options, answer, escaped_exp)
+            question_list.append(question_obj)
+            #print(question_obj.toString())
+        return question_list
 
 
 if __name__ == '__main__':
-    with open('/Users/mohanqi/Desktop/Questions/questions_rd_test_2.json') as json_file:
+    with open('/Users/mohanqi/Desktop/Questions/ADCES_practice_exam_2.json') as json_file:
         data = json.load(json_file)
     #questions = data['questions']
 
     question_json = Json_to_question()
-    question_json.parseRdJson(data)
+    question_json.parseADCESJson(data)
 
 
 
