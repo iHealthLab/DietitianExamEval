@@ -1,0 +1,1194 @@
+195. What is the daily recommended daily fiber goal for a 10-year-old boy?
+A. 14 g/day B. 19.6 g/day C. 22.4 g/day D. 25.2 g/day 
+
+Difficulty Level: Expert
+
+Explanation: The daily recommended fiber goals for children are:
+
+References: US Department of Agriculture, US Department of Health and Human Services. US Dietary Guidelines 2015-2020. Appendix 7. Nutritional Goals for Age-Sex Groups Based on Dietary Reference Intakes and   Recommendations. Available at::  
+The daily recommended fiber intake for children can vary based on different guidelines and recommendations. According to the Institute of Medicine, the recommended daily fiber intake for children aged 9-13 years is 31 grams per day for boys. However, for a 10-year-old boy, the specific options provided in your question do not align exactly with this recommendation.
+
+Given the options:
+A. 14 g/day
+B. 19.6 g/day
+C. 22.4 g/day
+D. 25.2 g/day
+
+The closest option to the general recommendation for fiber intake for children in that age range would be higher than the options provided. However, if we were to choose the closest higher value, it would be:
+
+D. 25.2 g/day
+
+This is still below the 31 grams per day recommended by the Institute of Medicine but is the highest among the given choices.
+
+
+205. How many 3-lb cases of bulk potato chips are needed to feed 1½ oz of potato chips to each of 75 people?
+A. 2 B. 3 C. 7 D. 8 
+
+Difficulty Level: Difficult
+
+Explanation: Step 1: Calculate total ounces of potato chips needed
+1.5 oz of potato chips per person * 75 people = 112.5 oz
+Step 2: Convert total ounces of potato chips to pounds (1 pound = 16 oz):
+112.5 / 16 = 7.03 lb
+Step 3: Divide the total pounds of potato chips needed by the pounds of potato chips in one bulk case.
+7.03 lb/3 lb = 2.34 lb 
+Round up 2.34 to the nearest whole number. Three cases of potato chips are needed.
+
+References: Molt M, Shugart G. Food for Fifty. 13th ed. Upper Saddle River, NJ:: Pearson Prentice Hall; 2011::833. 
+To determine how many 3-lb cases of bulk potato chips are needed to feed 1½ oz of potato chips to each of 75 people, we can follow these steps:
+
+1. **Calculate the total amount of potato chips needed:**
+   Each person needs 1½ oz of potato chips.
+   For 75 people, the total amount needed is:
+   \[
+   75 \times 1.5 \text{ oz} = 112.5 \text{ oz}
+   \]
+
+2. **Convert the total amount needed from ounces to pounds:**
+   There are 16 ounces in a pound. So, we convert 112.5 oz to pounds:
+   \[
+   112.5 \text{ oz} \div 16 \text{ oz/lb} = 7.03125 \text{ lb}
+   \]
+
+3. **Determine how many 3-lb cases are needed:**
+   Each case contains 3 lbs of potato chips. To find out how many cases are needed, we divide the total pounds needed by the pounds per case:
+   \[
+   7.03125 \text{ lb} \div 3 \text{ lb/case} \approx 2.34375 \text{ cases}
+   \]
+
+Since you can't purchase a fraction of a case, you need to round up to the next whole number. Therefore, you need 3 cases.
+
+So, the answer is:
+B. 3
+
+
+220. Four entrees that are on next Friday’s menu were sold in the following amounts the last time each was on the menu:  BBQ ribs (76 sold), seafood platter (118), roast beef (96), and filet mignon (154), for a total of 444 entrees sold. 
+A. 101 B. 98 C. 94 D. 95 
+
+Difficulty Level: Expert
+
+Explanation: Determine the average number of entrees sold over the past 5 weeks
+447 + 423 + 437 + 444 + 429 = 2180
+2180 total entrees/5 weeks = 436 entrees/week
+Calculate the popularity index for roast beef based on the entrée count the last time the menu was offered
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practices. 12th ed. Upper Saddle River, NJ:: Prentice-Hall; 2011. 
+It seems like you might be looking for the average number of entrees sold for the four items listed. To find the average, you would add up the total number of entrees sold and then divide by the number of items.
+
+The total number of entrees sold is given as 444. There are four different entrees.
+
+So, the average number of entrees sold is:
+
+\[ \text{Average} = \frac{\text{Total number of entrees sold}}{\text{Number of different entrees}} = \frac{444}{4} = 111 \]
+
+However, none of the options (A. 101, B. 98, C. 94, D. 95) match this average. If you are looking for something else, please provide more context or clarify the question.
+
+
+225. A recipe requires 1 3/4 cup quick-cooking tapioca. Tapioca is purchased in twelve 8-oz boxes in a case and costs $41.88 per case. Three cups of quick-cooking tapioca weighs 1 lb. What is the recipe cost for tapioca?
+A. $2.33 B. $4.07 C. $5.24 D. $6.98 
+
+Difficulty Level: Difficult
+
+Explanation: One case of tapioca contains twelve 8-oz boxes for a total of 6 lb (12 boxes * 7 0.5 lb = 6 lb). To calculate the price per pound:
+$41.88 (total cost of case) ÷ 6 lb = $6.98 per pound
+To calculate the price per cup, remember that 3 cups of tapioca weighs 1 lb:
+$6.98 ÷ 3 cups = $2.33
+To calculate the price per 1¾ cups (recipe cost): $2.33 × 1.75 = $4.07
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To determine the recipe cost for tapioca, we need to follow these steps:
+
+1. **Convert the required tapioca from cups to pounds:**
+   - The recipe requires 1 3/4 cups of tapioca.
+   - We know that 3 cups of tapioca weigh 1 pound.
+
+   Therefore, we can set up a proportion to find the weight of 1 3/4 cups in pounds:
+   \[
+   \frac{1 \text{ lb}}{3 \text{ cups}} = \frac{x \text{ lb}}{1.75 \text{ cups}}
+   \]
+   Solving for \( x \):
+   \[
+   x = \frac{1.75 \text{ cups} \times 1 \text{ lb}}{3 \text{ cups}} = \frac{1.75}{3} \approx 0.5833 \text{ lb}
+   \]
+
+2. **Determine the cost per pound of tapioca:**
+   - Tapioca is purchased in a case of twelve 8-oz boxes.
+   - Each box is 8 ounces, so the total weight of a case is:
+   \[
+   12 \text{ boxes} \times 8 \text{ oz/box} = 96 \text{ oz}
+   \]
+   - Convert ounces to pounds (since there are 16 ounces in a pound):
+   \[
+   96 \text{ oz} \div 16 \text{ oz/lb} = 6 \text{ lb}
+   \]
+   - The cost of a case is $41.88, so the cost per pound is:
+   \[
+   \frac{41.88 \text{ dollars}}{6 \text{ lb}} = 6.98 \text{ dollars/lb}
+   \]
+
+3. **Calculate the cost for the required amount of tapioca:**
+   - We need 0.5833 pounds of tapioca.
+   - The cost per pound is $6.98, so the cost for 0.5833 pounds is:
+   \[
+   0.5833 \text{ lb} \times 6.98 \text{ dollars/lb} \approx 4.07 \text{ dollars}
+   \]
+
+Therefore, the recipe cost for tapioca is:
+\[
+\boxed{4.07}
+\]
+
+
+239. One of the key differences in value analysis and value added is
+A. value analysis strives to reduce costs whereas value added strives to bundle components. B. value analysis seeks to reduce costs whereas value added seeks to increase market value. C. value analysis seeks to reduce costs whereas value added seeks to add a quality component. D. value analysis seeks to change the value of the product whereas value added seeks to reduce costs. 
+
+Difficulty Level: Difficult
+
+Explanation: Whereas value analysis focuses on lowering costs, value added looks for ways to increase the value of a product or service to the consumer.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+B. value analysis seeks to reduce costs whereas value added seeks to increase market value.
+
+Value analysis is a systematic approach to improving the value of a product or process by examining its function and identifying ways to reduce costs without compromising quality. On the other hand, value added refers to the enhancement a company gives its product or service before offering the product to customers, which often aims to increase its market value.
+
+
+254. If 48 lbs of cooked broccoli are needed and fresh broccoli yields 79% after trimming and cooking, how much fresh broccoli should be purchased?
+A. 58 lbs B. 61 lbs C. 69 lbs D. 77 lbs 
+
+Difficulty Level: Moderate
+
+Explanation: EP (edible portion)/%yield = AP (as purchased) 48 pounds ÷ .79 = 60.76 pounds (round to 61 pounds)
+
+References: Ulm RA. How Much To Buy:: A Foodservice Purchasing Workbook. Upper Saddle River, NJ:: Prentice-Hall; 1993::19-22. 
+To determine how much fresh broccoli should be purchased, we need to account for the yield percentage after trimming and cooking. The yield percentage is 79%, which means that 79% of the fresh broccoli weight will remain after trimming and cooking.
+
+We can set up the following equation to find the required amount of fresh broccoli:
+
+\[ \text{Weight of cooked broccoli} = \text{Weight of fresh broccoli} \times \text{Yield percentage} \]
+
+Given:
+- Weight of cooked broccoli = 48 lbs
+- Yield percentage = 79% = 0.79
+
+Let \( x \) be the weight of fresh broccoli needed. The equation becomes:
+
+\[ 48 = x \times 0.79 \]
+
+To solve for \( x \):
+
+\[ x = \frac{48}{0.79} \]
+
+\[ x \approx 60.76 \]
+
+Since we need to purchase whole pounds of broccoli, we round up to the nearest whole number. Therefore, the amount of fresh broccoli that should be purchased is approximately 61 lbs.
+
+So, the correct answer is:
+B. 61 lbs
+
+
+258. Using the following figures, calculate the break-even point for a café: Fixed costs = $52,000; variable costs = $85,000; total sales = $210,000.
+A. $86,666.66 B. $113,333.33 C. $130,000.00 D. $473,000.00 
+
+Difficulty Level: Expert
+
+Explanation: Break-even point in sales = Fixed costs/Contribution margin ratio
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To calculate the break-even point, we need to determine the point at which total revenue equals total costs (both fixed and variable). The formula for the break-even point in sales dollars is:
+
+\[ \text{Break-even point} = \frac{\text{Fixed Costs}}{1 - \frac{\text{Variable Costs}}{\text{Total Sales}}} \]
+
+Given:
+- Fixed Costs = $52,000
+- Variable Costs = $85,000
+- Total Sales = $210,000
+
+First, calculate the variable cost ratio:
+
+\[ \frac{\text{Variable Costs}}{\text{Total Sales}} = \frac{85,000}{210,000} \approx 0.4048 \]
+
+Next, calculate the contribution margin ratio:
+
+\[ 1 - \frac{\text{Variable Costs}}{\text{Total Sales}} = 1 - 0.4048 = 0.5952 \]
+
+Now, use the break-even formula:
+
+\[ \text{Break-even point} = \frac{52,000}{0.5952} \approx 87,363.64 \]
+
+Since none of the provided options exactly match this result, it appears there might be a slight discrepancy. However, the closest option to our calculated break-even point is:
+
+A. $86,666.66
+
+
+262. Apricots have a yield of 94%. If an apricot jam recipe calls for 6 lb of trimmed apricots, how many batches of jam can be made from a 24-lb bushel?
+A. 3.76 batches B. 4.83 batches C. 22.5 batches D. 5.65 batches 
+
+Difficulty Level: Moderate
+
+Explanation: If the yield percent for apricots is 94%, multiply 24 pounds by 0.94 to get 22.56 pounds—this is the amount of trimmed apricots. Next divide 22.56 pounds by 6 pounds to determine how many batches of the recipe can be made. The answer is 3.76.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To determine how many batches of apricot jam can be made from a 24-lb bushel of apricots, given that apricots have a yield of 94%, we need to follow these steps:
+
+1. Calculate the usable amount of apricots from the 24-lb bushel.
+2. Determine how many batches of jam can be made from the usable amount of apricots.
+
+**Step 1: Calculate the usable amount of apricots.**
+
+The yield of apricots is 94%, which means that 94% of the 24-lb bushel is usable.
+
+\[ \text{Usable amount} = 24 \text{ lb} \times 0.94 \]
+
+\[ \text{Usable amount} = 22.56 \text{ lb} \]
+
+**Step 2: Determine how many batches of jam can be made.**
+
+The recipe calls for 6 lb of trimmed apricots per batch.
+
+\[ \text{Number of batches} = \frac{\text{Usable amount}}{\text{Amount per batch}} \]
+
+\[ \text{Number of batches} = \frac{22.56 \text{ lb}}{6 \text{ lb/batch}} \]
+
+\[ \text{Number of batches} = 3.76 \]
+
+Therefore, the number of batches of jam that can be made from a 24-lb bushel of apricots is:
+
+**A. 3.76 batches**
+
+
+273. What inventory valuation method assumes that newer items are used before older items?
+A. FIFO B. LIFO C. Latest purchase price D. Weighted average 
+
+Difficulty Level: Difficult
+
+Explanation: LIFO (last in, first out) is based on the assumption that newer items are used before older items, in other words, that current purchases are largely meeting current production needs. FIFO (first in, first out) is based on using older items before newer items.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+The inventory valuation method that assumes newer items are used before older items is:
+
+A. FIFO (First-In, First-Out)
+
+FIFO assumes that the oldest inventory items are sold or used first, and therefore, the cost of the older inventory is assigned to the cost of goods sold, while the cost of the newer inventory remains in ending inventory.
+
+
+279. A smoothie recipe calls for a number 4 scoop of Greek yogurt, a number 8 scoop of frozen strawberries, and a number 8 scoop of fresh blueberries. A total of 450 smoothies are needed. How many gallons of Greek yogurt will be needed?
+A. 28 gallons B. 29 gallons C. 112 gallons D. 113 gallons 
+
+Difficulty Level: Difficult
+
+Explanation: A number 4 scoop is 1 cup and there are 16 cups in a gallon.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To determine how many gallons of Greek yogurt are needed for 450 smoothies, we need to understand the volume measurements associated with the scoops and then convert that volume to gallons.
+
+1. **Understanding Scoop Sizes:**
+   - A number 4 scoop holds 8 fluid ounces.
+   - A number 8 scoop holds 4 fluid ounces.
+
+2. **Greek Yogurt Requirement:**
+   - Each smoothie requires a number 4 scoop of Greek yogurt, which is 8 fluid ounces.
+
+3. **Total Greek Yogurt for 450 Smoothies:**
+   - Each smoothie needs 8 fluid ounces of Greek yogurt.
+   - For 450 smoothies: \( 450 \text{ smoothies} \times 8 \text{ fluid ounces/smoothie} = 3600 \text{ fluid ounces} \).
+
+4. **Converting Fluid Ounces to Gallons:**
+   - There are 128 fluid ounces in a gallon.
+   - To convert 3600 fluid ounces to gallons: \( \frac{3600 \text{ fluid ounces}}{128 \text{ fluid ounces/gallon}} = 28.125 \text{ gallons} \).
+
+Since we need to round to the nearest whole number, 28.125 gallons rounds to 28 gallons.
+
+Therefore, the correct answer is:
+A. 28 gallons
+
+
+292. What product is more likely to be sold using a LIFO inventory approach?
+A. Salmon portions B. Brick of cheddar C. Deli meat cuts D. Jar of spaghetti sauce 
+
+Difficulty Level: Difficult
+
+Explanation: The LIFO, or last-in/first-out, inventory approach is not practical for perishable goods of using newest inventory first. LIFO is better suited for nonperishable products, as perishable food could spoil while sitting idle in inventory, thereby leading to losses.
+
+References: Tardi C. Inventory valuation:: LIFO vs FIFO. Investopedia. Updated April 2020. Accessed November 23, 2020. Available at:: Website 
+The LIFO (Last In, First Out) inventory approach is typically used for products that do not have a strict expiration date or where the newest inventory is more desirable or cost-effective to sell first. 
+
+Given the options:
+
+A. Salmon portions
+B. Brick of cheddar
+C. Deli meat cuts
+D. Jar of spaghetti sauce
+
+The most likely product to be sold using a LIFO inventory approach would be:
+
+D. Jar of spaghetti sauce
+
+This is because jars of spaghetti sauce generally have a longer shelf life compared to perishable items like salmon portions, cheddar cheese, or deli meat cuts. The other items are more likely to be sold using a FIFO (First In, First Out) approach to ensure freshness and reduce the risk of spoilage.
+
+
+311. What entity conducts hospital accreditation surveys annually?
+A. Centers for Medicare and Medicaid Services B. The Joint Commission  C. DNV D. US Department of Health and Human Services 
+
+Difficulty Level: Expert
+
+Explanation: DNV conducts hospital accreditation surveys annually, though they are only reported to CMN every 3 years. The Joint Commission conducts accreditation surveys every 3 years. CMS and HHS do not perform accreditation surveys.
+
+References: DNV. NIAHO Hospital Accreditation. Accessed January 11, 2022. Available at::  
+B. The Joint Commission
+
+The Joint Commission is a prominent organization that conducts hospital accreditation surveys, typically on a triennial basis, although they may conduct follow-up surveys more frequently if needed. While other entities like the Centers for Medicare and Medicaid Services (CMS) and DNV also play roles in healthcare quality and accreditation, The Joint Commission is particularly well-known for its comprehensive accreditation process.
+
+
+312. Which of the following terms is related to marketing?
+A. Needs of seller B. Future growth C. Planning for today D. Sales volume 
+
+Difficulty Level: Difficult
+
+Explanation: Successful marketing focuses on producing goods that customers want, forecasting future growth, and being profit oriented. On the other hand, selling stresses the needs of the seller, focuses on the product, is sales-volume-oriented, and plans for today.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+D. Sales volume
+
+Sales volume is a term directly related to marketing as it refers to the quantity of products or services sold within a specific period. It is a key metric used to assess the effectiveness of marketing strategies and campaigns. The other options, while potentially relevant to business in general, are not as specifically tied to marketing.
+
+
+324. Among the following, which is the most important plan an onsite foodservice manager should have in place for emergency preparedness?
+A. Menu plan B. Staffing plan C. Equipment plan D. Inventory plan 
+
+Difficulty Level: Expert
+
+Explanation: The menu plan is the key for emergency preparedness. Menu plans vary depending on the type of emergency. Staffing, equipment, and inventory plans are important, but they all revolve around the menu planned for an emergency.
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Pearson; 2016; 60. 
+In the context of emergency preparedness for an onsite foodservice manager, the most important plan to have in place is:
+
+**D. Inventory plan**
+
+Here's why:
+
+1. **Inventory Plan**: In an emergency, having a well-documented inventory plan ensures that the foodservice operation knows exactly what supplies are on hand. This is crucial for managing resources effectively, especially if supply chains are disrupted. It helps in rationing food, planning meals with available ingredients, and ensuring that there is enough food to last through the emergency period.
+
+2. **Menu Plan**: While important, a menu plan is secondary to knowing what inventory is available. The menu can be adapted based on the inventory, but without knowing what ingredients are on hand, creating a feasible menu is challenging.
+
+3. **Staffing Plan**: A staffing plan is also important, but in an emergency, the immediate concern is often ensuring that there is enough food and supplies. Staffing can be adjusted based on the situation and the available resources.
+
+4. **Equipment Plan**: Having a plan for equipment is important for maintaining operations, but again, it is secondary to ensuring that there is enough food and supplies to serve. Equipment needs can be managed as the situation evolves.
+
+In summary, while all these plans are important for comprehensive emergency preparedness, the inventory plan is the most critical because it directly impacts the ability to provide food and manage resources during an emergency.
+
+
+348. Which of the following is part of the definition of an RDN who has achieved a
+A. Completes a dietetic internship B. Attains RDN credential C. Has 3-5 years of practice experience D. Attains specialty certification 
+
+Difficulty Level: Difficult
+
+Explanation: The SOPP describes a competent practitioner as an individual  who has attained the RDN credential and consistently provides safe and reliable services
+
+References: None 
+The definition of a Registered Dietitian Nutritionist (RDN) who has achieved a specialty certification typically includes the following components:
+
+A. Completes a dietetic internship
+B. Attains RDN credential
+D. Attains specialty certification
+
+C. Has 3-5 years of practice experience is not necessarily a part of the definition of an RDN who has achieved a specialty certification, although having practice experience can be a common requirement or beneficial for obtaining certain specialty certifications. 
+
+To summarize, the key parts of the definition of an RDN who has achieved a specialty certification are completing a dietetic internship, attaining the RDN credential, and attaining the specialty certification itself.
+
+
+368. Systems thinking is the management approach for considering the entire organization when making decisions or allocating resources. Which is an example of systems thinking?
+A. Select a produce vendor who could deliver high-quality produce twice daily B. Reschedule kitchen staff to prepare more foods from scratch to meet customer expectations C. Develop a policy for using online job sites to attract applicants D. Select cleaning chemicals that do not harm the environment 
+
+Difficulty Level: Difficult
+
+Explanation: Rescheduling kitchen staff to prepare food to meet customer expectations changes the kitchen and staff/resource entirely. Making a change to the produce delivery does not change the kitchen and a policy for using online job sites would affect the human resources department.
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practices. 12th ed. Upper Saddle River, NJ:: Prentice-Hall; 2011:: 49. 
+Systems thinking involves understanding how different parts of an organization interact and affect one another, and making decisions that consider the broader implications for the entire system. Let's analyze each option in this context:
+
+A. **Select a produce vendor who could deliver high-quality produce twice daily** - This decision focuses on improving the quality and freshness of produce, which could positively impact the kitchen's operations and customer satisfaction. However, it primarily addresses a specific operational need rather than considering the broader organizational system.
+
+B. **Reschedule kitchen staff to prepare more foods from scratch to meet customer expectations** - This decision involves reallocating human resources to improve food quality and meet customer expectations. It considers the impact on staff schedules, workload, and potentially customer satisfaction, but it is still relatively focused on a specific area of the organization.
+
+C. **Develop a policy for using online job sites to attract applicants** - This decision aims to improve the recruitment process by leveraging online job sites. It addresses a specific HR function and does not necessarily consider the broader organizational system.
+
+D. **Select cleaning chemicals that do not harm the environment** - This decision takes into account the environmental impact of the organization's operations. It reflects a broader perspective by considering the long-term sustainability and environmental responsibility of the organization, which can affect the organization's reputation, compliance with regulations, and overall sustainability goals.
+
+Among these options, **D. Select cleaning chemicals that do not harm the environment** is the best example of systems thinking. It considers the broader implications of the decision on the environment, regulatory compliance, and the organization's sustainability goals, reflecting a holistic approach to decision-making.
+
+
+375. Which statement best describes the “D” component of the PDSA performance improvement model?
+A. Determine how changes will be implemented B. Implement the intervention C. Determine the impact of the intervention D. Maintain and continue improvement 
+
+Difficulty Level: Difficult
+
+Explanation: Determination of how changes will be made is part of the P component of PDSA and impact determination is considered a component of S.
+
+References: Joint Commission Resources. Cost-Effective Performance Improvement in Hospitals. Oakbrook Terrace, IL:: JCAHO; 2005::94. 
+The statement that best describes the “D” component of the PDSA (Plan-Do-Study-Act) performance improvement model is:
+
+B. Implement the intervention
+
+In the PDSA cycle, "D" stands for "Do," which involves carrying out the plan and implementing the intervention or change on a small scale to test its effect.
+
+
+378. Which statement best describes the “A” component of the PDSA performance improvement model?
+A. Determine how changes will be implemented B. Implement the intervention C. Determine the impact of the intervention D. Maintain and continue improvement 
+
+Difficulty Level: Difficult
+
+Explanation: Maintaining and continuing improvement is included in the A component of the PDSA model. Determination of how changes will be implemented is part of P, implementation of the plan is included in D, and determination of the impact of the plan is included in S.
+
+References: Joint Commission Resources. Cost-Effective Performance Improvement in Hospitals. Oakbrook Terrace, IL:: JCAHO; 2005::94. 
+The statement that best describes the “A” component of the PDSA (Plan-Do-Study-Act) performance improvement model is:
+
+C. Determine the impact of the intervention
+
+In the PDSA cycle:
+- **Plan**: Identify a goal or purpose, formulate a theory, define success metrics, and put a plan into action.
+- **Do**: Implement the plan, execute the process, make the product.
+- **Study**: Monitor outcomes to test the validity of the plan for signs of progress and success, or problems and areas for improvement.
+- **Act**: Integrate the learning generated by the entire process. Adjust the plan based on what was learned and determine the next steps.
+
+
+382. Which of the following must be up to date and reflect consistent expectations?
+A. Personnel policies B. Vacation schedules C. Equipment D. Menus 
+
+Difficulty Level: Moderate
+
+Explanation: Personnel policies should reflect current realities of the workplace. Supervisors should employ these policies to ensure that employees are being treated fairly and expectations are consistent.
+
+References: Keiser J, DeMicco, FJ. Contemporary Management Theory:: Controlling and Analyzing Costs in Foodservice Operations. Upper Saddle River, NJ:: Prentice Hall; 2000::225. 
+A. Personnel policies
+
+Personnel policies must be up to date and reflect consistent expectations to ensure that all employees are aware of the rules, regulations, and standards of the organization. This helps in maintaining a fair and organized work environment, ensuring compliance with legal requirements, and promoting a positive workplace culture.
+
+
+387. What does the O in the FOCUS-PDCA performance improvement model represent?
+A. Identify a process to improve B. Develop a team C. Explain the current process D. Recognize sources of variation 
+
+Difficulty Level: Difficult
+
+Explanation: Non-maleficence is the intent to not inflict harm. A researcher is obligated to inform the participants if there is a risk in participation at the beginning or during the study.
+
+References: Academy of Nutrition and Dietetics. Code of Ethics for the Nutrition and Dietetics Profession. 2018. Accessed January 11, 2022. 
+The O in the FOCUS-PDCA performance improvement model stands for "Organize a team that knows the process." Therefore, the correct answer is:
+
+B. Develop a team
+
+
+392. A manager overlooks older adults for fast-paced supervisory roles without evaluating their qualifications based on an assumption that their age prevents them from being effective. What is this manager demonstrating?
+A. Discrimination B. Stereotyping C. Inclusion D. Exclusion 
+
+Difficulty Level: Moderate
+
+Explanation: A manager who makes hiring decisions based on a belief about the abilities of a class of people rather than individual characteristics is demonstrating discrimination.
+
+References: Lund A, Latortue KY, Rodriguez J. Dietetic training:: Understanding racial inequity in power and privilege. J Acad Nutr Diet. 2021;121(8)::1437-1440. 
+The manager is demonstrating **A. Discrimination**.
+
+Discrimination involves treating someone unfairly or unjustly based on certain characteristics, such as age, without considering their actual qualifications or abilities. In this case, the manager is making a decision based on the assumption that older adults cannot be effective in fast-paced supervisory roles, which is a form of age discrimination.
+
+
+409. A foodservice requires that all employees must wash hands before returning to the production area after a break. This requirement is referred to as a
+A. single-use plan. B. procedure. C. policy. D. foodservice law. 
+
+Difficulty Level: Moderate
+
+Explanation: Policy indicates what should be done whereas a procedure indicates how it should be done. There is no such thing as foodservice law. A single-use plan is not applicable in this context.
+
+References: Payne-Palacio J, Theis M. Foodservice Management Principles and Practice. 12th ed. Upper Saddle River, NJ:: Prentice Hall; 2012. 
+The requirement that all employees must wash their hands before returning to the production area after a break is referred to as a:
+
+B. procedure.
+
+A procedure is a specific way of carrying out a task or process, often detailed step-by-step, to ensure consistency and compliance with standards or regulations. In this case, the handwashing requirement is a procedural step to maintain hygiene and food safety in the foodservice environment.
+
+
+412. The Emergency Food Assistance Program and the Disaster Feeding Program are examples of food distribution programs. Which of the following statements best describes the similarities of the two programs?
+A. Both programs serve children, adolescents, and other age groups and provide commodity foods to local food distribution and service agencies. B. Both programs serve older adults and provide commodity foods to local food distribution and service agencies C. Both programs serve low-income populations and supplemental food supplies are either distributed to individual households or as meals served in congregate dining centers. D. Both programs serve children, adolescents, and other age groups and food supplies are either distributed to individual households or as meals served in congregate dining centers. 
+
+Difficulty Level: Difficult
+
+Explanation: Both of these programs serve children, adolescents, and other age groups and provide commodity foods that serve meals. The Emergency Food Assistance Program does not distribute to individual households.
+
+References: The American Dietetic Association. The position of the American Dietetic Association:: child and adolescent nutrition assistance programs. J Am Diet Assoc. 2010;110::794-795. 
+C. Both programs serve low-income populations and supplemental food supplies are either distributed to individual households or as meals served in congregate dining centers.
+
+This statement best describes the similarities between The Emergency Food Assistance Program (TEFAP) and the Disaster Feeding Program. Both programs aim to assist low-income populations by providing supplemental food supplies, which can be distributed directly to individual households or served as meals in congregate dining settings.
+
+
+415. Which of the following is an example of a violation of “beneficence” according to the Code of Ethics?
+A. Failing to obtain state licensure B. Providing MNT to a dialysis patient despite having no training in renal dietetics C. Submitting a research paper that plagiarizes a textbook D. Sending an all-staff memo to accuse an employee of theft 
+
+Difficulty Level: Expert
+
+Explanation: Beneficence represents the concept of professionalism. Within this category, the Code of Ethics requires that individuals “demonstrate respect, constructive dialogue, civility and professionalism in all communications, including social media.” Any suspicions of theft in the workplace should be addressed confidentially. In the Code of Ethics, state licensure and respecting intellectual property rights are related to autonomy, and practicing within professional limits is related to non-maleficence. 
+
+References: Academy of Nutrition and Dietetics. The Code of Ethics for the Nutrition and Dietetics Profession. Accessed January 21, 2022. Available at:: 
+The principle of "beneficence" in the Code of Ethics refers to the obligation to act in the best interest of the client or patient, promoting their well-being and taking actions that benefit them. 
+
+Given this definition, the example that best represents a violation of "beneficence" is:
+
+B. Providing MNT to a dialysis patient despite having no training in renal dietetics
+
+This action could potentially harm the patient due to the lack of appropriate knowledge and skills, thereby failing to act in the patient's best interest and compromising their well-being.
+
+
+419. An emergency crisis has caused an outage of all refrigeration units for the last 6 hours. What would be the first action taken by the foodservice director?
+A. Discard all potentially hazardous foods from the refrigeration units B. Review and utilize perishable food items for the next meal period C. Order portable refrigeration units to store all perishable foods D. Create work orders to repair the refrigeration units 
+
+Difficulty Level: Moderate
+
+Explanation: Potentially hazardous foods in the refrigeration units must be immediately discarded when the units are off for 4 hours or longer. Potentially hazardous foods include milk and milk products, shell eggs, and egg products, meats, poultry, fish, cut fruits, etc.
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Pearson; 2016; 236. 
+In the event of an emergency crisis causing an outage of all refrigeration units for the last 6 hours, the first action taken by the foodservice director should be to ensure food safety and minimize the risk of foodborne illness. Therefore, the most appropriate first action would be:
+
+B. Review and utilize perishable food items for the next meal period
+
+This action involves assessing the condition of the perishable food items to determine if they are still safe to use. The foodservice director should check the temperature of the food and look for any signs of spoilage. If the food has been kept at a safe temperature (below 40°F or 4°C) and shows no signs of spoilage, it can be used for the next meal period to prevent waste. If any food items are found to be unsafe, they should be discarded.
+
+After ensuring the immediate safety of the food, the foodservice director can then proceed with other actions such as ordering portable refrigeration units (C) and creating work orders to repair the refrigeration units (D). Discarding all potentially hazardous foods (A) should only be done if it is confirmed that the food has been kept at unsafe temperatures for an extended period.
+
+
+468. What type of power is used when placing an employee on a performance improvement plan?
+A. Punitive B. Legal C. Expert D. Interpersonal 
+
+Difficulty Level: Difficult
+
+Explanation: Placing an employee on a performance improvement plan, or PIP, is a form of punitive power. PIPs are typically implemented when an employee is not meeting specific job goals or demonstrates behaviors of concern to management. The PIP gives the employee the opportunity to address the deficiency and succeed.
+
+References: Society for Human Resource Management. How to establish a performance improvement plan. Accessed April 23, 2020. Available at::  
+A. Punitive
+
+Placing an employee on a performance improvement plan (PIP) typically involves the use of punitive power. This type of power is exercised to correct or improve an employee's performance by setting specific goals and expectations, often with the implication that failure to meet these standards could result in further disciplinary action, including potential termination.
+
+
+481. Full-time employees generally work 236 days per year. What is the full-time equivalent required to fill a position for an entire calendar year including weekends and holidays?
+A. 0.65 B. 0.72 C. 1.55 D. 1.85 
+
+Difficulty Level: Moderate
+
+Explanation: 365 days each year ÷ 236 full-time workdays = 1.55 full-time equivalents (FTEs); therefore, 1.55 FTEs are required for each full-time position.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To determine the full-time equivalent (FTE) required to fill a position for an entire calendar year, including weekends and holidays, we need to compare the number of days a full-time employee works to the total number of days in a year.
+
+1. A full-time employee works 236 days per year.
+2. There are 365 days in a calendar year.
+
+To find the FTE required, we divide the total number of days in a year by the number of days a full-time employee works:
+
+\[ \text{FTE} = \frac{\text{Total days in a year}}{\text{Days worked by a full-time employee}} \]
+
+\[ \text{FTE} = \frac{365}{236} \]
+
+Now, let's calculate this:
+
+\[ \text{FTE} \approx 1.55 \]
+
+Therefore, the full-time equivalent required to fill a position for an entire calendar year, including weekends and holidays, is:
+
+C. 1.55
+
+
+486. A foodservice operation's Net Profit is $41,137, Cost of Goods Sold is $145,350, Average Inventory Value is $7,330, and Total Meals Served Per Day is 200. What is the inventory turnover rate?
+A. 3.53 B. 5.61 C. 19.83 D. 36.65 
+
+Difficulty Level: Difficult
+
+Explanation: The inventory turnover rate is determined by dividing the cost of goods sold by the average inventory value. $145,350/$7,330 = 19.83.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Upper Saddle River, NJ:: Pearson; 2016. 
+To calculate the inventory turnover rate, you can use the following formula:
+
+\[ \text{Inventory Turnover Rate} = \frac{\text{Cost of Goods Sold (COGS)}}{\text{Average Inventory Value}} \]
+
+Given:
+- Cost of Goods Sold (COGS) = $145,350
+- Average Inventory Value = $7,330
+
+Plugging in the values:
+
+\[ \text{Inventory Turnover Rate} = \frac{145,350}{7,330} \]
+
+\[ \text{Inventory Turnover Rate} = 19.83 \]
+
+So, the correct answer is:
+
+C. 19.83
+
+
+523. Labor costs for a roast beef dinner were $764, operating costs were $129, profit was $210, and the cost for food for the event was $895. Of the total production costs, what percentage was spent on food?
+A. 47% B. 50% C. 73% D. 81% 
+
+Difficulty Level: Difficult
+
+Explanation: Total production costs include the cost of food, labor and overhead/operations costs. These costs include taxes, utilities, maintenance, etc. Profit is not included in the calculation as it is not a production cost.
+
+References: Gregoire MB, Spears MC. Foodservice Organizations:: A Managerial and Systems Approach. 7th ed. Upper Saddle River, NJ:: Prentice-Hall; 2009. 
+To determine the percentage of the total production costs that was spent on food, we first need to calculate the total production costs. The total production costs include labor costs, operating costs, and the cost for food. Profit is not included in the production costs.
+
+Here are the given costs:
+- Labor costs: $764
+- Operating costs: $129
+- Cost for food: $895
+
+First, we sum these costs to find the total production costs:
+\[ \text{Total production costs} = \text{Labor costs} + \text{Operating costs} + \text{Cost for food} \]
+\[ \text{Total production costs} = 764 + 129 + 895 \]
+\[ \text{Total production costs} = 1788 \]
+
+Next, we calculate the percentage of the total production costs that was spent on food:
+\[ \text{Percentage spent on food} = \left( \frac{\text{Cost for food}}{\text{Total production costs}} \right) \times 100 \]
+\[ \text{Percentage spent on food} = \left( \frac{895}{1788} \right) \times 100 \]
+
+Now, we perform the division and multiplication:
+\[ \text{Percentage spent on food} \approx 0.5006 \times 100 \]
+\[ \text{Percentage spent on food} \approx 50.06\% \]
+
+Rounding to the nearest whole number, the percentage spent on food is approximately 50%.
+
+Therefore, the correct answer is:
+B. 50%
+
+
+540. What type of flooring may be recommended for a food preparation area?
+A. Wood B. Ceramic tile C. Carpet D. Linoleum 
+
+Difficulty Level: Expert
+
+Explanation: Linoleum may be recommended for food preparation areas because it is resilient, nonabsorbent, and easily cleaned. Wood, ceramic tile, and carpeting are not appropriate for food preparation areas. 
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Pearson; 2017:: 82. 
+For a food preparation area, the recommended type of flooring is:
+
+B. Ceramic tile
+
+Ceramic tile is durable, easy to clean, and resistant to moisture and stains, making it an ideal choice for areas where food is prepared. Wood and carpet are not suitable due to their susceptibility to moisture and difficulty in cleaning, while linoleum, although easier to clean than wood or carpet, may not be as durable or resistant to heavy use and moisture as ceramic tile.
+
+
+548. Total iron-binding capacity (TIBC) increases when which of the following conditions is present?
+A. Malnutrition B. Nephritis C. Hepatitis D. Hemolytic anemia 
+
+Difficulty Level: Expert
+
+Explanation: TIBC increases in individuals with hepatitis. TIBC decreases in individuals with malnutrition, nephritis, and hemolytic anemia. 
+
+References: Raymond JL, McMorrow K. Krause and Mahan's Food & the Nutrition Care Process. 15th ed. Elsevier; 2021:: 66. 
+Total iron-binding capacity (TIBC) is a measure of the blood's capacity to bind iron with transferrin. It is often used to assess iron status in the body. TIBC tends to increase in conditions where there is a deficiency of iron, as the body produces more transferrin to try to capture and utilize the available iron more effectively.
+
+Among the conditions listed:
+
+A. Malnutrition - This can sometimes lead to decreased TIBC due to overall poor protein status, but it is not typically associated with increased TIBC.
+
+B. Nephritis - This condition, which involves inflammation of the kidneys, does not typically cause an increase in TIBC. In fact, it can sometimes lead to decreased TIBC due to protein loss in the urine.
+
+C. Hepatitis - Liver disease can affect the production of transferrin, but it is more commonly associated with decreased TIBC rather than increased.
+
+D. Hemolytic anemia - This condition involves the destruction of red blood cells, which releases iron into the bloodstream. The body does not typically respond to hemolytic anemia by increasing TIBC; instead, it may lead to increased serum iron levels.
+
+The correct answer is:
+
+None of the above conditions typically cause an increase in TIBC. However, iron deficiency anemia is a condition that is commonly associated with increased TIBC.
+
+
+668. Calculate the labor cost percent of the following: Salaries: $40,240, Benefits: $3,100, Wages: $20,000, Total sales: $560,420
+A. 11% B. 22% C. 8% D. 16% 
+
+Difficulty Level: Moderate
+
+Explanation: Calculate total cost of labor (salaries + wages + benefits) ÷ total number of sales. In this scenario, the organization has a labor cost of 11%: (40,240 + 3,100 + 20,000) ÷ 560,420 = 0.113.
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practice. 12th ed. Boston:: Pearson; 2011:: 474 
+To calculate the labor cost percent, you need to sum up all the labor-related costs (salaries, benefits, and wages) and then divide that total by the total sales. Finally, multiply the result by 100 to get the percentage.
+
+Here are the steps:
+
+1. Sum up all the labor-related costs:
+   - Salaries: $40,240
+   - Benefits: $3,100
+   - Wages: $20,000
+
+   Total labor costs = $40,240 + $3,100 + $20,000 = $63,340
+
+2. Divide the total labor costs by the total sales:
+   - Total sales: $560,420
+
+   Labor cost percent = (Total labor costs / Total sales) * 100
+   Labor cost percent = ($63,340 / $560,420) * 100
+
+3. Calculate the result:
+   Labor cost percent ≈ 0.1130 * 100
+   Labor cost percent ≈ 11.30%
+
+So, the labor cost percent is approximately 11%.
+
+The correct answer is:
+A. 11%
+
+
+708. Which vitamin deficiency is likely to develop in a patient with liver disease?
+A. A B. E C. D D. K 
+
+Difficulty Level: Difficult
+
+Explanation: Vitamin D deficiency is frequently reported in liver disease patients and is thought to result from impaired synthesis and absorption.
+
+References: Barchetta I, Angelico F, Del Ben M, et al. Strong association between non alcoholic fatty liver disease (NAFLD) and low 25(OH) vitamin D levels in an adult population with normal serum liver enzymes. BMC Med. 2011;9(1)::85. 
+In patients with liver disease, vitamin deficiencies can occur due to the liver's crucial role in the metabolism and storage of various vitamins. Among the options provided, vitamin K deficiency (Option D) is particularly likely to develop in patients with liver disease.
+
+The liver is essential for the synthesis of clotting factors, which require vitamin K for their production. Liver disease can impair the liver's ability to produce these clotting factors, leading to a deficiency in vitamin K-dependent clotting factors and an increased risk of bleeding.
+
+While deficiencies in vitamins A, E, and D can also occur in liver disease due to malabsorption and other metabolic disturbances, vitamin K deficiency is especially critical because of its direct impact on blood coagulation. Therefore, the correct answer is:
+
+D. K
+
+
+717. The standard recipe for the entrée makes 24 servings and each entrée serving is sold for $3.99. The sales goal for the entrée is $1200 total in one day. How many batches of the standard recipe should be prepared to meet the goal?
+A. 10 B. 11 C. 12 D. 13 
+
+Difficulty Level: Moderate
+
+Explanation: 1200/3.99= 300.75 entrees, 300.75 entrees/24 servings= 12.5, Round up to make 13 batches of the recipe to have enough entrees to sell to meet the sales goal.
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Boston:: Pearson; 2016. 
+To determine how many batches of the standard recipe should be prepared to meet the sales goal, we need to follow these steps:
+
+1. Calculate the total number of servings needed to meet the sales goal.
+2. Determine how many batches of the standard recipe are required to produce that number of servings.
+
+First, let's calculate the total number of servings needed to meet the sales goal of $1200.
+
+Each serving is sold for $3.99. Therefore, the number of servings needed is:
+\[ \text{Number of servings} = \frac{\text{Sales goal}}{\text{Price per serving}} = \frac{1200}{3.99} \]
+
+Using a calculator:
+\[ \frac{1200}{3.99} \approx 300.75 \]
+
+Since you can't prepare a fraction of a serving, you need to round up to the next whole number. Therefore, you need 301 servings.
+
+Next, we need to determine how many batches of the standard recipe are required to produce 301 servings. Each batch makes 24 servings.
+
+\[ \text{Number of batches} = \frac{\text{Total servings needed}}{\text{Servings per batch}} = \frac{301}{24} \]
+
+Using a calculator:
+\[ \frac{301}{24} \approx 12.54 \]
+
+Since you can't prepare a fraction of a batch, you need to round up to the next whole number. Therefore, you need 13 batches.
+
+So, the correct answer is:
+D. 13
+
+
+720. A long-term care facility requires a cook, server, trayline personnel, and supervisor for 8 hours daily to serve residents. How many full-time equivalents (FTEs) are needed to run the foodservice operation at this facility?
+A. 4 FTEs B. 5.2 FTEs C. 5.6 FTEs D. 6.4 FTEs 
+
+Difficulty Level: Difficult
+
+Explanation: A full-time equivalent is based on the work done by a full-time employee, typically 8 hours per day, 40 hours per week, or 2,080 hours a year. In this question, the facility is open 7 days/week, so 4 positions x 8 hrs/day x 7 days/week = 224 hours/week. Divide hours needed by FTE (224 hours / 40 hours). The result is  5.6 FTEs.
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Boston:: Pearson; 2016 
+To determine the number of full-time equivalents (FTEs) needed to run the foodservice operation at the long-term care facility, we need to consider the total number of hours required and how many hours constitute a full-time position.
+
+1. **Identify the total number of hours needed per day:**
+   - Cook: 8 hours
+   - Server: 8 hours
+   - Trayline personnel: 8 hours
+   - Supervisor: 8 hours
+
+   Total daily hours = 8 + 8 + 8 + 8 = 32 hours
+
+2. **Calculate the total number of hours needed per week:**
+   - Total daily hours = 32 hours
+   - Number of days in a week = 7
+
+   Total weekly hours = 32 hours/day * 7 days/week = 224 hours/week
+
+3. **Determine the number of hours that constitute a full-time position per week:**
+   - Typically, a full-time position is considered to be 40 hours per week.
+
+4. **Calculate the number of FTEs needed:**
+   - Total weekly hours needed / Hours per FTE per week = 224 hours / 40 hours = 5.6 FTEs
+
+Therefore, the number of full-time equivalents (FTEs) needed to run the foodservice operation at this facility is:
+
+C. 5.6 FTEs
+
+
+723. Which of following are defined by standards of identity?
+A. How full a food product container must be B. What ingredients must be declared on a label C. Minimum specifications for quality requirements D. Serving size and nutrient analysis 
+
+Difficulty Level: Difficult
+
+Explanation: The Standards of Identity define what a given food product is, its name, and the ingredients which must or may be used, and which ones must be declared on the label. 
+
+References: Science Direct. Standards of Identity. Accessed September 10, 2020. Available at::  
+Standards of identity are regulations established by the Food and Drug Administration (FDA) that define what a given food product must contain to be marketed under a certain name in interstate commerce. These standards ensure that consumers get what they expect when they purchase a product with a specific name. 
+
+Among the options provided:
+
+A. How full a food product container must be - This is not typically defined by standards of identity. This is more related to regulations concerning fill of container and packaging, which are designed to prevent deceptive practices.
+
+B. What ingredients must be declared on a label - This is related to labeling requirements, which are indeed influenced by standards of identity. Standards of identity specify the mandatory and optional ingredients that must or may be used in the product, which in turn affects what must be declared on the label.
+
+C. Minimum specifications for quality requirements - Standards of identity do not generally set quality requirements. Quality standards are usually covered under separate regulations, such as those for grading.
+
+D. Serving size and nutrient analysis - These are governed by nutrition labeling regulations, not standards of identity. Serving sizes are defined by the FDA's Reference Amounts Customarily Consumed (RACCs), and nutrient analysis is part of the Nutrition Facts labeling requirements.
+
+Therefore, the correct answer is:
+
+B. What ingredients must be declared on a label
+
+
+735. A foodservice has a 35% labor cost, 23% fixed costs, and a desired profit of 12%. Given a raw food cost of $4.55, what would be the selling price of an item when rounded up to $0.99 on the dollar?
+A. $13.99 B. $14.99 C. $15.99 D. $16.99 
+
+Difficulty Level: Expert
+
+Explanation: First determine the divisor: Divisor – (labor cost + fixed costs + desired profit). In this case 100% – (35% + 23% +12%) = 100% – 70% = 30%. To calculate sales price: Cost/Divisor = $4.55/0.3 = $15.16. Round up to $15.99.
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practices. 12th ed. Upper Saddle River, NJ:: Prentice-Hall; 2011 
+To determine the selling price of an item given the raw food cost and the percentages for labor, fixed costs, and desired profit, we can use the following formula:
+
+\[ \text{Selling Price} = \frac{\text{Raw Food Cost}}{1 - (\text{Labor Cost %} + \text{Fixed Cost %} + \text{Desired Profit %})} \]
+
+Given:
+- Raw Food Cost = $4.55
+- Labor Cost % = 35% = 0.35
+- Fixed Cost % = 23% = 0.23
+- Desired Profit % = 12% = 0.12
+
+First, we need to sum the percentages for labor, fixed costs, and desired profit:
+
+\[ \text{Total Percentage} = 0.35 + 0.23 + 0.12 = 0.70 \]
+
+Next, we subtract this total percentage from 1:
+
+\[ 1 - 0.70 = 0.30 \]
+
+Now, we can calculate the selling price:
+
+\[ \text{Selling Price} = \frac{4.55}{0.30} = 15.1667 \]
+
+Finally, we round up to the nearest $0.99 on the dollar:
+
+\[ \text{Rounded Selling Price} = 15.99 \]
+
+Therefore, the correct answer is:
+
+C. $15.99
+
+
+737. Which of the following saucepans would conduct heat most effectively?
+A. 4 gauge B. 10 gauge C. 14 gauge D. 20 gauge 
+
+Difficulty Level: Expert
+
+Explanation: The higher the gauge of a saucepan, the thinner the metal. Heavier stainless steel does not conduct heat well. Therefore, the best option in this case is a 20-gauge saucepan.
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practices. 13th ed. Boston, MA:: Prentice Hall; 2016. 
+The effectiveness of heat conduction in a saucepan is influenced by the thickness of its material. In the context of gauge measurements, a lower gauge number indicates a thicker material. Therefore, a saucepan with a lower gauge number would generally conduct heat more effectively because it has more material to distribute the heat evenly.
+
+Given the options:
+A. 4 gauge
+B. 10 gauge
+C. 14 gauge
+D. 20 gauge
+
+The 4 gauge saucepan would conduct heat most effectively because it is the thickest among the options provided.
+
+
+754. After a major flood, which of the following is OK to retain?
+A. A screw-top jar of peanut butter B. A snap-top container of snack chips C. A box of infant formula D. A retort pouch of cashews 
+
+Difficulty Level: Difficult
+
+Explanation: Foods with retort pouches and cans are waterproof and safe to retain, so long as certain precautionary measures are followed, such as removing labels, thoroughly washing the pouches or cans with hot water (if available), brushing or wiping away any silt, and sanitizing by immersion. Jars and canisters with screw tops or snap lids and baby formula boxes are not waterproof and should be thrown out.
+
+References: US Department of Agriculture. A Consumer's Guide to Food Safety:: Earthquakes and hurricanes. Accessed May 2, 2023. Edelstein S. Food Science:: An Ecological Approach. 2nd ed. Jones & Bartlett Learning:: 2019:: 331. 
+After a major flood, it's crucial to be cautious about food safety due to potential contamination. Here's an analysis of each item:
+
+A. **A screw-top jar of peanut butter**: This might be safe if the seal is intact and there is no visible damage or water intrusion. However, if the floodwater was contaminated, it's generally safer to discard it to avoid any risk of contamination.
+
+B. **A snap-top container of snack chips**: These containers are not typically watertight, so there's a high risk that floodwater could have seeped in. It's best to discard this item.
+
+C. **A box of infant formula**: Cardboard boxes and their contents are highly susceptible to water damage and contamination. Infant formula is particularly critical to keep safe, so it's best to discard it.
+
+D. **A retort pouch of cashews**: Retort pouches are designed to be airtight and waterproof, so if the pouch is undamaged and the seal is intact, it should be safe to retain. However, if there's any doubt about the integrity of the pouch, it's safer to discard it.
+
+In summary, the safest option to retain, assuming no visible damage or compromised seal, would be the **retort pouch of cashews**. However, always err on the side of caution with food safety, especially after a flood.
+
+
+757. Calculate the kcal from a 500 mL 20% intralipid in a parenteral nutrition regimen
+A. 500 B. 750 C. 1,000 D. 1,250 
+
+Difficulty Level: Moderate
+
+Explanation: 500 mL × 2.0 kcal/mL = 1000 kcal
+
+References: Charney P, Malone A. Academy of Nutrition and Dietetics Pocket Guide to Parenteral Nutrition. Chicago, IL:: Academy of Nutrition and Dietetics; 2007. 
+To calculate the kilocalories (kcal) from a 500 mL 20% intralipid solution in a parenteral nutrition regimen, you need to know the caloric content of the intralipid solution.
+
+A 20% intralipid solution contains 2 kcal per mL.
+
+Here's the calculation:
+
+1. Determine the total volume of the intralipid solution:
+   - Volume = 500 mL
+
+2. Determine the caloric content per mL of the 20% intralipid solution:
+   - Caloric content = 2 kcal/mL
+
+3. Multiply the total volume by the caloric content per mL:
+   - Total kcal = 500 mL * 2 kcal/mL
+   - Total kcal = 1,000 kcal
+
+Therefore, the correct answer is:
+C. 1,000
+
+
+790. Which of the following actions would likely be the result of systems thinking?
+A. Select a produce vendor who could deliver high-quality produce twice daily. B. Reschedule kitchen staff to prepare more foods from scratch to meet customer expectations. C. Develop a catering menu for department meetings to generate revenue for equipment purchases. D. Select cleaning chemicals that do not harm the environment. 
+
+Difficulty Level: Difficult
+
+Explanation: Systems thinking is the management approach to considering the entire organization when making decisions or allocating resources. Rescheduling kitchen staff to prepare food to meet customer expectations changes the kitchen and staff/resource entirely. Making a change to the produce delivery does not change the kitchen.
+
+References: Payne-Palacio J, Theis M. Foodservice Management:: Principles and Practices. 12th ed. Upper Saddle River, NJ:: Prentice-Hall; 2011::49. 
+Systems thinking involves understanding how different parts of a system interact and influence one another within the whole. It emphasizes the interconnections and interdependencies within a system, rather than focusing on individual components in isolation.
+
+Given this definition, the action that most aligns with systems thinking is:
+
+D. Select cleaning chemicals that do not harm the environment.
+
+This choice reflects an understanding of the broader impact of the decision on the environment, which is a key aspect of systems thinking. It considers the long-term and wide-ranging effects of using certain chemicals, rather than just focusing on immediate needs or isolated outcomes.
+
+
+813. Which measurement is the basis for a standard scoop size or disher serving?
+A. 1 cup B. 1 pint C. 1 quart D. 1 gallon 
+
+Difficulty Level: Expert
+
+Explanation: Scoops and dishers are based on level servings per quart. The utensil size specifies the number of servings so, for example, a serving from a #8 disher or scoop yields 1/8 of a quart
+
+References: Gregoire MB. Foodservice Organizations, A Managerial and Systems Approach. 9th ed. Boston:: Pearson; 2016 
+The basis for a standard scoop size or disher serving is typically measured in terms of the number of scoops per quart. Therefore, the correct answer is:
+
+C. 1 quart
+
+Standard scoops or dishers are often labeled with a number that indicates how many scoops it takes to make up a quart. For example, a #8 scoop means it takes 8 scoops to equal one quart.
+
+
+877. Which of the following is a malnutrition diagnosis in Nutrition Care Process terminology?
+A. New-onset illness malnutrition B. Acute disease or condition-related malnutrition C. Nutrient deficiency-related malnutrition D. Chronic disease or condition-related malnutrition  
+
+Difficulty Level: Difficult
+
+Explanation: The malnutrition diagnoses in the Nutrition Care Process terminology include the following: malnutrition (undernutrition), starvation-related malnutrition, chronic disease or condition-related malnutrition, acute disease or injury-related malnutrition, non-illness-related pediatric malnutrition, and illness-related pediatric malnutrition.
+
+References: Academy of Nutrition and Dietetics. eNCPT. Nutrition Diagnosis Terms and Definitions. Accessed November 7, 2023. Available at::  
+In the Nutrition Care Process (NCP) terminology, the correct malnutrition diagnoses are:
+
+B. Acute disease or condition-related malnutrition
+D. Chronic disease or condition-related malnutrition
+
+These terms are used to categorize malnutrition based on the underlying cause and duration of the condition. "Acute disease or condition-related malnutrition" refers to malnutrition that occurs in the context of an acute illness or injury, while "Chronic disease or condition-related malnutrition" refers to malnutrition associated with chronic conditions. 
+
+"Nutrient deficiency-related malnutrition" is not a standard term in the NCP, and "New-onset illness malnutrition" is also not a recognized term in this context.
+
+
+885. What is the age range when weight and body mass index peak?
+A. 30-39 years B. 40-49 years C. 50-59 years D. 60-69 years 
+
+Difficulty Level: Expert
+
+Explanation: Weight and BMI peak between age 50 and 59 years, then stabilize and start slowly dropping around age 70.
+
+References: Brown JE. Nutrition Through the Life Cycle. 6th ed. Belmont, CA:: Wadsworth; 2016:: 456 
+The age range when weight and body mass index (BMI) typically peak is:
+
+B. 40-49 years
+
+During this period, many individuals experience their highest average weight and BMI due to a combination of factors such as metabolic changes, lifestyle habits, and decreased physical activity.
+
+
+905. Approximately how many patient trays per minute must a centralized assembly unit produce in order to serve 500 patients during a 90-minute mealtime?
+A. 4 B. 4.5 C. 5 D. 5.5 
+
+Difficulty Level: Easy
+
+Explanation: To calculate, take the total number of trays and divide into 90 minutes
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 9th ed. Boston:: Pearson; 2017 
+To determine how many patient trays per minute a centralized assembly unit must produce to serve 500 patients during a 90-minute mealtime, we can use the following calculation:
+
+1. **Total number of patients to be served**: 500
+2. **Total time available in minutes**: 90
+
+We need to find the number of trays produced per minute. This can be calculated by dividing the total number of patients by the total time available:
+
+\[
+\text{Trays per minute} = \frac{\text{Total number of patients}}{\text{Total time available in minutes}}
+\]
+
+Substituting the given values:
+
+\[
+\text{Trays per minute} = \frac{500}{90} \approx 5.56
+\]
+
+Therefore, the centralized assembly unit must produce approximately 5.56 trays per minute. Since the options provided are whole or half numbers, the closest option is:
+
+D. 5.5
+
+
+914. Which of the following is the fork drip test for IDDSI Level 4 Pureed/Extremely Thick?
+A. Scooped sample sits in mound on fork and does not drip easily through prongs B. Small sample amount drips continuously through the prongs C. Sample drips slowly in dollops through the prongs, which do not leave a clear pattern D. Sample shows no sign of dripping through the prongs 
+
+Difficulty Level: Difficult
+
+Explanation: The fork drip test for the Level 4 Pureed/Extremely Thick diet of the International Dysphagia Diet Standardisation Initiative requires that a scooped sample sits in mound on the fork and does not drip easily through prongs.
+
+References: International Dysphagia Diet Standardisation Initiative. IDDSI Framework. Accessed March 13, 2020. Available at:: 
+The fork drip test for IDDSI Level 4 Pureed/Extremely Thick is:
+
+A. Scooped sample sits in mound on fork and does not drip easily through prongs
+
+This test ensures that the consistency of the food is appropriate for individuals who require pureed or extremely thick textures, as it should hold its shape on the fork and not drip through the prongs.
+
+
+923. When using IDDSI abbreviations (such as MM5 for minced and moist) in foodservice software, why is the number listed after the letters?
+A. To ensure the number isn't misinterpreted as the amount of meals or drinks being ordered B. To be in accordance with the Nutrition Care Process Terminology alphanumeric coding system C. To be in accordance with the ICD-10 alphanumeric coding system D. To avoid confusion with other medical terms with similar abbreviations 
+
+Difficulty Level: Expert
+
+Explanation: IDDSI abbreviations list letters before numbers to avoid misinterpretation that the number reflects the amount of meals or drinks being ordered.
+
+References: Reference:: International Dysphagia Diet Standardisation Initiative. IDDSI abbreviations. January 2018. Accessed February 14, 2020. Available at::  
+A. To ensure the number isn't misinterpreted as the amount of meals or drinks being ordered
+
+In foodservice software, the number is listed after the letters in IDDSI abbreviations to clearly distinguish the texture or consistency level from the quantity of items being ordered. This helps prevent any potential confusion that could arise if the number were placed before the letters, where it might be mistaken for the number of meals or drinks being requested.
+
+
+934. Which of the following is best practice for writing a job description?
+A. Target it specifically for the ideal candidate B. Present all information as short phrases in bulleted lists C. Include responsibilities no longer part of the job in case they are restored as requirements in the future D. Limit the job duties section to only 3-5 key responsibilities  
+
+Difficulty Level: Expert
+
+Explanation: In best practice, a job description will include only 3-5 key responsibilities in the duties section. The description should be tailored to the basic skills and experience required of the job rather than targeting it for an ideal candidate, and it should only include what is currently required of the job and omit past or potential future requirements. Using complete sentences is recommended.
+
+References: University of Pittsburgh, Department of Human Resources. Writing a job description. Accessed February 13, 2020. 
+The best practice for writing a job description is:
+
+A. Target it specifically for the ideal candidate
+
+This approach ensures that the job description is tailored to attract the most suitable candidates who possess the skills, experience, and attributes that align with the role and the company's needs. It helps in clearly communicating the expectations and requirements of the job, making it easier for potential candidates to determine if they are a good fit. 
+
+While using bulleted lists (B) can improve readability, and focusing on key responsibilities (D) can help in clarity, these should be balanced with providing enough detail to give a comprehensive view of the role. Including outdated responsibilities (C) is not advisable as it can create confusion and mislead candidates about the current expectations of the job.
+
+
+976. How many 5-oz servings are in a 5-gallon tub of ice cream?
+A. 25 B. 25.6 C. 100 D. 128 
+
+Difficulty Level: Difficult
+
+Explanation: 5 gal * 128 oz/gal = 640 oz divided by 5 oz = 128 servings
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 8th ed. New York:: Pearson; 2013:: 194 
+To determine how many 5-ounce servings are in a 5-gallon tub of ice cream, we need to convert gallons to ounces and then divide by the serving size.
+
+1 gallon is equal to 128 ounces. Therefore, 5 gallons is:
+\[ 5 \text{ gallons} \times 128 \text{ ounces/gallon} = 640 \text{ ounces} \]
+
+Next, we divide the total number of ounces by the serving size (5 ounces):
+\[ \frac{640 \text{ ounces}}{5 \text{ ounces/serving}} = 128 \text{ servings} \]
+
+So, the number of 5-ounce servings in a 5-gallon tub of ice cream is:
+\[ \boxed{128} \]
+
+
+998. What is the key organ for regulating the amount of carbohydrate in the blood?
+A. Pancreas B. Liver C. Small intestine D. Gallbladder 
+
+Difficulty Level: Difficult
+
+Explanation: Rationale: The pancreas is the key metabolic organ for regulating how much carbohydrate is in the blood. The pancreas releases significant insulin amounts to downregulate the blood glucose level or releases glucagon to upregulate the blood glucose level.
+
+References: Sánchez López de Nava A, Raja A. Physiology, Metabolism. StatPearls. Accessed August 27, 2021. Available at::  
+B. Liver
+
+The liver plays a crucial role in regulating the amount of carbohydrate in the blood. It helps maintain blood glucose levels by storing glucose as glycogen (glycogenesis) and releasing it when needed (glycogenolysis). The liver also participates in gluconeogenesis, the process of producing glucose from non-carbohydrate sources. While the pancreas is important for producing insulin and glucagon, which are hormones that regulate blood glucose levels, the liver is the key organ for directly managing carbohydrate storage and release.
+
+
+1006. Improper food cooling methods can result in foodborne illness. Which of the following is the recommended time frame for cooling foods from 70ºF to 41ºF?
+A. 1/2 hour B. 1 hour C. 2 hours D. 4 hours 
+
+Difficulty Level: Expert
+
+Explanation: Cooling foods from 70ºF to 41ºF should be done within 4 hours. Cooling foods from 140ºF to 70ºF should be completed within 2 hours. Proper food cooling techniques include use of shallow pans to reduce and divide the food, stainless steel storage containers to transfer heat from the food, and ice cubes. 
+
+References: National Restaurant Association. Servsafe manager. Chicago, IL:: NRA Educational Foundation; 2014:: 6.16. 
+The recommended time frame for cooling foods from 70ºF to 41ºF is **D. 4 hours**.
+
+According to food safety guidelines, the two-stage cooling process involves cooling food from 135ºF to 70ºF within 2 hours, and then from 70ºF to 41ºF or lower within an additional 4 hours. This helps to minimize the time food spends in the "danger zone" (40ºF to 140ºF), where bacteria can grow rapidly and potentially cause foodborne illness.
+
+
+1032. An employee used a #10 scoop instead of #12 scoop, which was intended for 400 servings of ice cream. How many servings are they going to be short?
+A. 67 B. 104 C. 125 D. 155 
+
+Difficulty Level: Expert
+
+Explanation: They will be short 67 servings. A #10 scoop is 3.2 oz while a #12 scoop is 2.67 oz. 400 servings × 2.67 oz = 1068 oz. 1068 oz ÷ 3.2 oz = 333 servings. 400 servings – 333 servings = 67
+
+References: Gregoire MB. Foodservice Organizations:: A Managerial and Systems Approach. 8th ed. New York:: Pearson; 2013:: 192 
+To determine how many servings the employee will be short, we need to understand the difference in volume between a #10 scoop and a #12 scoop and how that affects the total number of servings.
+
+A #10 scoop typically holds 3.2 ounces, while a #12 scoop holds 2.67 ounces. 
+
+First, let's calculate the total amount of ice cream intended for 400 servings using a #12 scoop:
+\[ 400 \text{ servings} \times 2.67 \text{ ounces/serving} = 1068 \text{ ounces} \]
+
+Now, let's see how many servings the employee will get using a #10 scoop with the same total amount of ice cream:
+\[ 1068 \text{ ounces} \div 3.2 \text{ ounces/serving} \approx 333.75 \text{ servings} \]
+
+Since you can't have a fraction of a serving, we round down to 333 servings.
+
+Finally, we calculate the shortage:
+\[ 400 \text{ intended servings} - 333 \text{ actual servings} = 67 \text{ servings} \]
+
+So, the employee will be short by:
+\[ \boxed{67} \] servings.
+
+
+1033. Which of the following is best practice when translating educational materials from English to another language in a culturally sensitive way?
+A. Contract with a native speaker of the language to do the translation B. Avoid translating until the text is written well in English C. Contract with one reviewer to check for cultural and linguistic appropriateness D. Translate the content word for word 
+
+Difficulty Level: Expert
+
+Explanation: Rationale: Before translating a document, it should be written well in English, because if the original English text is too difficult, the translated text will probably also be too difficult. It cannot be assumed that native speakers of a given language are skilled at writing or at translating, so the person contracted to translate should it is more important that the translator be a professional translator than simply a native speaker. More than one individual should review the translation. Word-for-word, or literal, translations do not account for linguistic and cultural differences. 
+
+References: Centers for Medicare and Medicaid Services. Toolkit for Making Written Material Clear and Effective:: Detailed guide for translations. Available at::  
+The best practice when translating educational materials from English to another language in a culturally sensitive way is:
+
+A. Contract with a native speaker of the language to do the translation
+
+However, it's important to note that while contracting a native speaker is a crucial step, it should ideally be combined with other practices to ensure cultural and linguistic appropriateness. For instance, having multiple reviewers, including subject matter experts and cultural consultants, can further enhance the quality and sensitivity of the translation. Additionally, the translation process should involve adapting the content to fit the cultural context rather than just translating word for word.
+
+
+1040. The World Health Organization growth charts for children younger than age 2 are based on data from which of the following populations?
+A. Infants who were primarily breastfed until at least 4 months of age and continued through 12 months B. Infants who were primarily breastfed until at least 6 months of age and continued through 12 months C. Infants who were formula fed due to free formula distribution for at least 12 months D. Infants who were primarily breastfed until at least 2 months of age and continued through 12 months 
+
+Difficulty Level: Expert
+
+Explanation: Rationale: The WHO growth curves are expected to offer a single international standard that represents optimal physiological growth for all children from birth to 5 years of age and to establish the breastfed infant as the normative model for growth and development. The growth curves are based on data measured in infants who were primarily breastfed until age 4 months and continued through12 months.
+
+References: www.cdc.gov/growthcharts/who_charts.htm 
+The World Health Organization (WHO) growth charts for children younger than age 2 are based on data from the following population:
+
+B. Infants who were primarily breastfed until at least 6 months of age and continued through 12 months.
+
+The WHO growth standards are based on data collected from a diverse, international sample of children who were raised in environments that support optimal growth, including being primarily breastfed for the first 6 months and continuing breastfeeding along with appropriate complementary foods up to at least 12 months.
+
+

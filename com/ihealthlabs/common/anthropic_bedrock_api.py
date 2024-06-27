@@ -12,13 +12,13 @@ class AnthropicBedRockAPI(object):
     """
     def __init__(self):
         # Create a Bedrock Runtime client in the AWS Region of your choice.
-        self.client = boto3.client("bedrock-runtime", region_name="us-west-2")
+        self.client = boto3.client("bedrock-runtime", region_name="us-east-1")
 
     def ask_claude(self, question, model_id, temp):
         # Format the request payload using the model's native structure.
         native_request = {
             "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": 512,
+            "max_tokens": 1024,
             "temperature": temp,
             "messages": [
                 {
@@ -50,9 +50,9 @@ if __name__ == '__main__':
     api = AnthropicBedRockAPI()
     qsql = QuestionsMysql()
     # Connect to RD Exam Questions
-    question_dict = qsql.get_RD_questions()
+    # question_dict = qsql.get_RD_questions()
     # Connect to CDCES Exam Questions
-    # question_dict = qsql.get_questions()
+    question_dict = qsql.get_questions()
 
     # Asks the incorrect questions with choices only, allowing explanation and no restriction in answer format
     '''
@@ -67,9 +67,25 @@ if __name__ == '__main__':
         prompt_str = question['question'] + "\n" + question['choices']
         question_str = str(question['question_id']) + ". " + prompt_str + "\n\nDifficulty Level: " + question['difficulty_level'] + "\n\nCorrect Answer: " + question['answer'] + "\n\nExplanation: " + question['explanation'] + "\n\nReferences: " + question['answer_references'] + "\n\nClaude 3 Response: \n"
         response = api.ask_claude(prompt_str, "anthropic.claude-3-opus-20240229-v1:0", 0)
-        
+
         with open('claude_3_answer_incorrect_RD_questions_with_explanation.txt', 'w') as file:
             file.write(content + question_str + "\n" + response + "\n" + "-"*20 + "\n\n\n")
+    '''
+    '''
+    response = "\n"
+    for startIndex in range (1, len(question_dict) + 1, 1):
+        prompt_str = qsql.get_prompt_string(question_dict, startIndex, 1)
+        print(prompt_str)
+
+        response += api.ask_claude(prompt_str, "anthropic.claude-3-opus-20240229-v1:0", 0)
+        response += "\n"
+
+        with open('claude3opus_answer_CDCES_questions_xml.txt', 'w') as file:
+            file.write(prompt_str + "\n" + response + "\n")
+
+    score4 = qsql.get_score_xml(response, question_dict)
+    print("\n")
+    print('claude 3:' + score4)
     '''
     
     # Asks all questions from the question set with certain answer format
@@ -80,13 +96,18 @@ if __name__ == '__main__':
         print(prompt_str)
         # Use the Claude 3 - Opus model and set temperature to 0. 
         # To use Claude 3 Haiku/Sonnet, use "anthropic.claude-3-haiku-20240307-v1:0" or "anthropic.claude-3-sonnet-20240229-v1:0"
-        response_claude += api.ask_claude(prompt_str, "anthropic.claude-3-opus-20240229-v1:0", 0)
+        response_claude += api.ask_claude(prompt_str, "anthropic.claude-3-5-sonnet-20240620-v1:0", 0)
         response_claude += "\n"
         #print(response_claude)
     print(response_claude)
     
+    # Save the LLM response to a txt file
+    with open('claude_3.5_sonnet_answer_RD_questions.txt', 'w') as file:
+        file.write(response_claude + "\n")
+
+
     score_claude = qsql.get_score(response_claude, question_dict)
 
     print("\n")
-    print('Claude 3 Opus: ' + score_claude)
-    
+    print('Claude 3.5 Sonnet: ' + score_claude)
+

@@ -1,4 +1,5 @@
 import time
+import re
 import openai
 from openai import OpenAI
 
@@ -47,15 +48,35 @@ if __name__ == '__main__':
         
         with open('gpt_4o_answer_incorrect_RD_questions_with_explanation_inconsistent.txt', 'r') as file:
             content = file.read()
-
+        
         prompt_str = question['question'] + "\n" + question['choices']
         question_str = str(question['question_id']) + ". " + prompt_str + "\n\nDifficulty Level: " + question['difficulty_level'] + "\n\nCorrect Answer: " + question['answer'] + "\n\nExplanation: " + question['explanation'] + "\n\nReferences: " + question['answer_references'] + "\n\nGPT Response: \n"
+        
         response = api.ask_chatgpt(prompt_str, "gpt-4o", 0)
+        print(response)
+        
         with open('gpt_4o_answer_incorrect_RD_questions_with_explanation_inconsistent.txt', 'w') as file:
             file.write(content + question_str + "\n" + response + "\n\n\n")
     '''
+    response = "\n"
+    for startIndex in range (1, len(question_dict) + 1, 1):
+        prompt_str = qsql.get_prompt_string(question_dict, startIndex, 1)
+        print(prompt_str)
+
+        response += api.ask_chatgpt(prompt_str, "gpt-4o", 0)
+        response += "\n"
+
+    with open('gpt40_answer_CDCES_questions_xml.txt', 'w') as file:
+        file.write(response + "\n")
+    
+
+    score4 = qsql.get_score_xml(response, question_dict)
+    print("\n")
+    print('gpt4o:' + score4)
+
 
     # Asks all questions from the question set with certain answer format
+    '''
     response4 = "\n"
     # Prompt the questions in a batch of 1, you can adjust the question number in each batch 
     for startIndex in range (1, len(question_dict) + 1, 1):
@@ -67,11 +88,11 @@ if __name__ == '__main__':
         #time.sleep(2)
 
     # Save the LLM response to a txt file
-    '''
     with open('gpt_answer_CDCES_questions.txt', 'w') as file:
         file.write(response4 + "\n")
-    '''
+    
 
     score4 = qsql.get_score(response4, question_dict)
     print("\n")
     print('gpt4o:' + score4)
+    '''
