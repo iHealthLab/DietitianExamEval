@@ -74,8 +74,8 @@ local config = function(branchName) {
   },
   ENVIRONMENT: env[branchName].clusterName,
   TAG: '${DRONE_COMMIT_SHA:0:8}',
-  MYSQL_URL: {
-    from_secret: 'MYSQL_URL',
+  MYSQL_HOST: {
+    from_secret: 'MYSQL_HOST',
   },
   MYSQL_USERNAME: {
     from_secret: 'MYSQL_USERNAME',
