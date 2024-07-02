@@ -33,6 +33,7 @@ local gpt_exp = function(branchName) {
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
   when: getCondition(branchName, ['push']),
+  environment: config(branchName),
 };
 
 
@@ -120,7 +121,6 @@ local cdPipeline = function(branchName) {
     event: 'push',
   },
   image_pull_secrets: ['IHEALTH_DOCKER_CONFIGURATION_JSON'],
-  environment: config(branchName),
 };
 
 
