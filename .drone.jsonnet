@@ -1,3 +1,14 @@
+local env = {
+  main: {
+    clusterName: 'dev-new',
+    instance: 'dev-drone.ihealth-eng.com',
+  },
+  release: {
+    clusterName: 'prod',
+    instance: 'prod-drone.ihealth-eng.com',
+  },
+};
+
 local config = function(branchName) {
   DOCKER_USERNAME: {
     from_secret: 'IHEALTH_DOCKER_USERNAME',
@@ -21,17 +32,6 @@ local config = function(branchName) {
   },
   OPENAI_API_KEY: {
     from_secret: 'OPENAI_API_KEY',
-  },
-};
-
-local env = {
-  main: {
-    clusterName: 'dev-new',
-    instance: 'dev-drone.ihealth-eng.com',
-  },
-  release: {
-    clusterName: 'prod',
-    instance: 'prod-drone.ihealth-eng.com',
   },
 };
 
