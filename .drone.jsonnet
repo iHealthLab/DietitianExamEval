@@ -59,6 +59,9 @@ local gpt_exp = function(branchName) {
     'pip install -r requirements.txt',
     'pwd',
     'ls -al .env',
+    'echo $ENV',
+    'echo $MYSQL_PORT',
+    'echo $DB_NAME',
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
   when: getCondition(branchName, ['push']),
