@@ -83,8 +83,11 @@ local config = function(branchName) {
   MYSQL_PASSWORD: {
     from_secret: 'MYSQL_PASSWORD',
   },
-  CONNECTOR_URL: {
-    from_secret: 'CONNECTOR_URL',
+  GEMINI_API_KEY: {
+    from_secret: 'GEMINI_API_KEY',
+  },
+  OPENAI_API_KEY: {
+    from_secret: 'OPENAI_API_KEY',
   },
 };
 
@@ -117,6 +120,7 @@ local cdPipeline = function(branchName) {
     event: 'push',
   },
   image_pull_secrets: ['IHEALTH_DOCKER_CONFIGURATION_JSON'],
+  environment: config(branchName),
 };
 
 
