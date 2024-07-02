@@ -55,8 +55,8 @@ local gpt_exp = function(branchName) {
   image: 'python:3.12',
   pull: 'if-not-exists',
   commands: [
-    'pip install -r requirements.txt',
     'export',
+    'pip install -r requirements.txt',
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
   when: getCondition(branchName, ['push']),
