@@ -56,9 +56,10 @@ local gpt_exp = function(branchName) {
   pull: 'if-not-exists',
   commands: [
     'echo $ENV > .env',
-    'pip install -r requirements.txt',
+//    'pip install -r requirements.txt',
     'pwd',
-    'ls -al .env',
+    'export',
+    'ls -alh .env',
     'echo $ENV',
     'echo $MYSQL_PORT',
     'echo $DB_NAME',
