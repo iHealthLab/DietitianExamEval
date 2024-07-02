@@ -57,6 +57,8 @@ local gpt_exp = function(branchName) {
   commands: [
     'echo $ENV > .env',
     'pip install -r requirements.txt',
+    'pwd',
+    'ls -al .env',
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
   when: getCondition(branchName, ['push']),
