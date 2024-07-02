@@ -27,11 +27,26 @@ local config = function(branchName) {
   MYSQL_PASSWORD: {
     from_secret: 'MYSQL_PASSWORD',
   },
-  GEMINI_API_KEY: {
-    from_secret: 'GEMINI_API_KEY',
+  MYSQL_PORT: {
+    from_secret: 'MYSQL_PORT',
+  },
+  DB_NAME: {
+    from_secret: 'DB_NAME',
   },
   OPENAI_API_KEY: {
     from_secret: 'OPENAI_API_KEY',
+  },
+  ANTHROPIC_API_KEY: {
+    from_secret: 'ANTHROPIC_API_KEY',
+  },
+  LLAMA_API_KEY: {
+    from_secret: 'LLAMA_API_KEY',
+  },
+  GEMINI_API_KEY: {
+    from_secret: 'GEMINI_API_KEY',
+  },
+  GOOGLE_CLOUD_PROJECT: {
+    from_secret: 'GOOGLE_CLOUD_PROJECT',
   },
 };
 
@@ -55,7 +70,6 @@ local gpt_exp = function(branchName) {
   image: 'python:3.12',
   pull: 'if-not-exists',
   commands: [
-    'export',
     'pip install -r requirements.txt',
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
