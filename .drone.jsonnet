@@ -1,3 +1,29 @@
+local config = function(branchName) {
+  DOCKER_USERNAME: {
+    from_secret: 'IHEALTH_DOCKER_USERNAME',
+  },
+  DOCKER_PASSWORD: {
+    from_secret: 'IHEALTH_DOCKER_PASSWORD',
+  },
+  ENVIRONMENT: env[branchName].clusterName,
+  TAG: '${DRONE_COMMIT_SHA:0:8}',
+  MYSQL_HOST: {
+    from_secret: 'MYSQL_HOST',
+  },
+  MYSQL_USER: {
+    from_secret: 'MYSQL_USER',
+  },
+  MYSQL_PASSWORD: {
+    from_secret: 'MYSQL_PASSWORD',
+  },
+  GEMINI_API_KEY: {
+    from_secret: 'GEMINI_API_KEY',
+  },
+  OPENAI_API_KEY: {
+    from_secret: 'OPENAI_API_KEY',
+  },
+};
+
 local env = {
   main: {
     clusterName: 'dev-new',
@@ -64,32 +90,6 @@ local publish = function(branchName, name) {
     },
   },
   when: getCondition(branchName, ['push']),
-};
-
-local config = function(branchName) {
-  DOCKER_USERNAME: {
-    from_secret: 'IHEALTH_DOCKER_USERNAME',
-  },
-  DOCKER_PASSWORD: {
-    from_secret: 'IHEALTH_DOCKER_PASSWORD',
-  },
-  ENVIRONMENT: env[branchName].clusterName,
-  TAG: '${DRONE_COMMIT_SHA:0:8}',
-  MYSQL_HOST: {
-    from_secret: 'MYSQL_HOST',
-  },
-  MYSQL_USER: {
-    from_secret: 'MYSQL_USER',
-  },
-  MYSQL_PASSWORD: {
-    from_secret: 'MYSQL_PASSWORD',
-  },
-  GEMINI_API_KEY: {
-    from_secret: 'GEMINI_API_KEY',
-  },
-  OPENAI_API_KEY: {
-    from_secret: 'OPENAI_API_KEY',
-  },
 };
 
 local deployCommands = function(name) {
