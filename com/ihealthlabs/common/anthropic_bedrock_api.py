@@ -18,7 +18,7 @@ class AnthropicBedRockAPI(object):
         # Format the request payload using the model's native structure.
         native_request = {
             "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": 1024,
+            "max_tokens": 2046,
             "temperature": temp,
             "messages": [
                 {

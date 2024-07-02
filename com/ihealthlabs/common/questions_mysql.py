@@ -210,11 +210,11 @@ class QuestionsMysql:
         # Find all matches in the text
         matches = re.findall(pattern, answer_string)
         choices = ["{}".format(answer) for answer in matches]
-        '''
+        
         for choice in choices:
             print(choice)
         print(len(choices))
-        '''
+        
         result = '\n'.join(choices)
         return result
 
