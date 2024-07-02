@@ -55,6 +55,7 @@ local gpt_exp = function(branchName) {
   image: 'python:3.12',
   pull: 'if-not-exists',
   commands: [
+    'echo $ENV > .env',
     'pip install -r requirements.txt',
     'python com/ihealthlabs/common/gpt_exp.py'
   ],
