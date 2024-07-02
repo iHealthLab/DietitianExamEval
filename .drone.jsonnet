@@ -77,8 +77,8 @@ local config = function(branchName) {
   MYSQL_HOST: {
     from_secret: 'MYSQL_HOST',
   },
-  MYSQL_USERNAME: {
-    from_secret: 'MYSQL_USERNAME',
+  MYSQL_USER: {
+    from_secret: 'MYSQL_USER',
   },
   MYSQL_PASSWORD: {
     from_secret: 'MYSQL_PASSWORD',
