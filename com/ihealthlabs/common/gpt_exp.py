@@ -6,12 +6,12 @@ qsql = questions_mysql.QuestionsMysql()
 # Connect to RD Exam Questions
 question_dict = qsql.get_RD_questions()
 
-response4 = "\n"
-
 for i in range(1, 3):  
     file_name = f'gpt_4o_self_consistency_exp{i}.txt'
     with open(file_name, 'w') as file:
         pass
+
+    response4 = "\n"
 
     # Prompt the questions in a batch of 1, you can adjust the question number in each batch 
     for startIndex in range (1, len(question_dict) + 1, 1):
