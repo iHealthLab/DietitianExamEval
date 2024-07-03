@@ -1,5 +1,6 @@
 import openai_api
 import questions_mysql
+import time
 
 api = openai_api.OpenAIAPI()
 qsql = questions_mysql.QuestionsMysql()
@@ -13,6 +14,7 @@ for i in range(1, 3):
 
     response4 = "\n"
 
+    start = time.time()
     # Prompt the questions in a batch of 1, you can adjust the question number in each batch 
     for startIndex in range (1, len(question_dict) + 1, 1):
         
@@ -28,6 +30,9 @@ for i in range(1, 3):
 
         with open(file_name, 'w') as file:
             file.write(content + prompt_str + "\n" + response + "\n\n\n")
+    end = time.time()
+    length = end - start
+    print("Round", i, "took", length, "seconds.")
 '''
 # Add the answer list to the txt file
 with open('gpt_4o_zero_shot_exp5.txt', 'r') as file:

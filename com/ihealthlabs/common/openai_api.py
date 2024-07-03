@@ -2,6 +2,8 @@ import time
 import re
 import openai
 from openai import OpenAI
+from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
+from httpx import RemoteProtocolError
 
 from config import env
 from questions_mysql import QuestionsMysql
@@ -14,6 +16,12 @@ class OpenAIAPI(object):
 
     def __init__(self):
         openai.api_key = env.str("OPENAI_API_KEY")
+
+    @retry(
+        wait=wait_exponential(multiplier=1, min=4, max=10),
+        stop=stop_after_attempt(5),
+        retry=retry_if_exception_type(RemoteProtocolError)
+    )
 
     def ask_chatgpt(self, question, model_str, temp):
         res = ""
