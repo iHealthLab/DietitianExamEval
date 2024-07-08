@@ -2,6 +2,7 @@ import google.generativeai as genai
 
 from config import env
 from questions_mysql import QuestionsMysql
+from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 
 
 class GeminiAIAPI(object):
@@ -12,6 +13,11 @@ class GeminiAIAPI(object):
     def __init__(self):
         self._client = genai.configure(api_key=env.str("GEMINI_API_KEY"))
     
+    @retry(
+        wait=wait_exponential(multiplier=1, min=4, max=10),
+        stop=stop_after_attempt(5),
+        retry=retry_if_exception_type(ValueError)
+    )
     def ask_gemini(self, question, model_str, temp):
         res = ""
         model = genai.GenerativeModel(model_str)
