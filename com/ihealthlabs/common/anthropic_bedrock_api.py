@@ -3,7 +3,9 @@
 
 import boto3
 import json
+import urllib3.exceptions
 
+from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 from questions_mysql import QuestionsMysql
 
 class AnthropicBedRockAPI(object):
@@ -13,7 +15,12 @@ class AnthropicBedRockAPI(object):
     def __init__(self):
         # Create a Bedrock Runtime client in the AWS Region of your choice.
         self.client = boto3.client("bedrock-runtime", region_name="us-east-1")
-
+    
+    @retry(
+        wait=wait_exponential(multiplier=1, min=4, max=10),
+        stop=stop_after_attempt(5),
+        retry=retry_if_exception_type(urllib3.exceptions.ReadTimeoutError)
+    )
     def ask_claude(self, question, model_id, temp):
         # Format the request payload using the model's native structure.
         native_request = {
