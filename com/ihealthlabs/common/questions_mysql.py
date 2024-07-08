@@ -215,8 +215,8 @@ class QuestionsMysql:
             print(choice)
         print(len(choices))
         
-        result = '\n'.join(choices)
-        return result
+        #result = '\n'.join(choices)
+        return choices
 
 if __name__ == '__main__':
     qsql = QuestionsMysql()

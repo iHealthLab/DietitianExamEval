@@ -4,3 +4,5 @@ PyMySQL==1.0.2
 SQLAlchemy==2.0.25
 openai==1.9.0
 tenacity
+boto3
+google-generativeai
