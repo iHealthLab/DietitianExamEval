@@ -42,10 +42,36 @@ class GeminiAIAPI(object):
         response = model.generate_content(question, generation_config=genai.types.GenerationConfig(temperature=temp), safety_settings=safety_settings)
         #print(response.text)
 
+        # Debugging output
+        print("Response object:", response)
+
+        # Check if the response contains valid parts
+        if not response or 'candidates' not in response or not response.candidates:
+            print("No valid response received.")
+            raise ValueError("No valid response received.")  # Raise an exception to trigger retry
+
+        for candidate in response.candidates:
+            # Check safety ratings
+            if candidate.safety_ratings and any(rating.block for rating in candidate.safety_ratings):
+                print("Response blocked due to safety ratings.")
+                raise ValueError("Response blocked due to safety ratings.")  # Raise an exception to trigger retry
+
+            # Check if the candidate has text
+            if hasattr(candidate, 'text') and candidate.text:
+                print(candidate.text)
+                res += candidate.text
+            else:
+                print("No text in candidate.")
+                raise ValueError("No text in candidate.")  # Raise an exception to trigger retry
+        
+        return res
+
+    '''
         for chunk in response:
             print(chunk.text)
             res += chunk.text
         return res
+    '''
 
 if __name__ == '__main__':
     api = GeminiAIAPI()
