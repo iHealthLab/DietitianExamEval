@@ -1,18 +1,17 @@
-import anthropic_bedrock_api
+import gemini_api
 import questions_mysql
 import time
 
-api = anthropic_bedrock_api.AnthropicBedRockAPI()
+api = gemini_api.GeminiAIAPI()
 qsql = questions_mysql.QuestionsMysql()
 # Connect to RD Exam Questions
 question_dict = qsql.get_RD_questions()
 
-
 for i in range(1, 3):  
-    file_name = f'claude_3.5_sonnet_sc_cot_exp{i}.txt'
+    file_name = f'gemini_1.5_pro_sc_cot_exp{i}.txt'
     with open(file_name, 'w') as file:
         pass
-
+    
     response4 = "\n"
 
     start = time.time()
@@ -22,9 +21,9 @@ for i in range(1, 3):
         with open(file_name, 'r') as file:
             content = file.read()
 
-        prompt_str = qsql.get_cot_prompt_string(question_dict, startIndex, 1)
+        prompt_str = qsql.get_no_explain_prompt_string(question_dict, startIndex, 1)
         print(prompt_str)
-        response = api.ask_claude(prompt_str, "anthropic.claude-3-5-sonnet-20240620-v1:0", 0) 
+        response = api.ask_gemini(prompt_str, 'gemini-1.5-pro', 0) 
         response4 += response
         response4 += "\n"
 
@@ -34,10 +33,3 @@ for i in range(1, 3):
     end = time.time()
     length = end - start
     print("Round", i, "took", length, "seconds.")
-
-
-'''
-score4 = qsql.get_score_xml(response4, question_dict)
-print("\n")
-print('claude 3.5 sonnet:' + score4)
-'''
