@@ -21,7 +21,7 @@ for i in range(1, 3):
         with open(file_name, 'r') as file:
             content = file.read()
 
-        prompt_str = qsql.get_no_explain_prompt_string(question_dict, startIndex, 1)
+        prompt_str = qsql.get_cot_prompt_string(question_dict, startIndex, 1)
         print(prompt_str)
         response = api.ask_gemini(prompt_str, 'gemini-1.5-pro', 0) 
         response4 += response
