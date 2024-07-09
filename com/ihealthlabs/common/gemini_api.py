@@ -15,7 +15,7 @@ class GeminiAIAPI(object):
     
     @retry(
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        stop=stop_after_attempt(5),
+        stop=stop_after_attempt(15),
         retry=retry_if_exception_type(ValueError)
     )
     def ask_gemini(self, question, model_str, temp):
