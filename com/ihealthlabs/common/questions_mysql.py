@@ -179,7 +179,7 @@ class QuestionsMysql:
         return choices
     
     def get_score_xml(self, answer_string, question_dict):
-        pattern = r"<answer>([a-dA-D])(?:\.[^<]*)?</answer>"
+        pattern = r"<answer>([a-dA-D]|NaN)(?:\.[^<]*)?</answer>"
     
         # Find all matches in the text
         matches = re.findall(pattern, answer_string)
@@ -205,7 +205,7 @@ class QuestionsMysql:
     
     # Get the answer list from the LLM's response by finding the xml tag pattern
     def get_answer_xml(self, answer_string):
-        pattern = r"<answer>([a-dA-D])(?:\.[^<]*)?</answer>"
+        pattern = r"<answer>([a-dA-D]|NaN)(?:\.[^<]*)?</answer>"
     
         # Find all matches in the text
         matches = re.findall(pattern, answer_string)

@@ -6,7 +6,7 @@ qsql = questions_mysql.QuestionsMysql()
 question_dict = qsql.get_RD_questions()
 
 # Get the LLM's response from the txt file
-with open('gpt_4o_cot_exp8.txt', 'r') as file:
+with open('gemini_1.5_pro_cot_exp1.txt', 'r') as file:
         content = file.read()
 
 # Get the answer list and score
@@ -17,7 +17,7 @@ if len(choices) == 1050:
     print(score4)
 
     # Save answer list and score to the txt file
-    with open('gpt_4o_cot_exp8.txt', 'w') as file:
+    with open('gemini_1.5_pro_cot_exp1.txt', 'w') as file:
         file.write(content + "Answer List: \n" + answers + "\n" + score4)
 else:
     # Find the missed answer
@@ -30,7 +30,7 @@ else:
         print(tag)
     '''
     # Specific pattern to match
-    specific_pattern = r"<answer>([a-dA-D])(?:\.[^<]*)?</answer>"
+    specific_pattern = r"<answer>([a-dA-D]|NaN)(?:\.[^<]*)?</answer>"
 
     # Find all answer tags
     all_tags = re.findall(all_tags_pattern, content)

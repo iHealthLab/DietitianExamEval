@@ -15,40 +15,45 @@ class GeminiAIAPI(object):
     
     @retry(
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        stop=stop_after_attempt(15),
+        stop=stop_after_attempt(5),
         retry=retry_if_exception_type(ValueError)
     )
     def ask_gemini(self, question, model_str, temp):
-        res = ""
-        model = genai.GenerativeModel(model_str)
-        safety_settings = [
-            {
-                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-                "threshold": "BLOCK_NONE"
-            },
-            {
-                "category": "HARM_CATEGORY_HARASSMENT",
-                "threshold": "BLOCK_NONE"
-            },
-            {
-                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-                "threshold": "BLOCK_NONE"
-            },
-            {
-                "category": "HARM_CATEGORY_HATE_SPEECH",
-                "threshold": "BLOCK_NONE"
-            },
-        ]
-        response = model.generate_content(question, generation_config=genai.types.GenerationConfig(temperature=temp), safety_settings=safety_settings)
-        #print(response.text)
+        try:
+            res = ""
+            model = genai.GenerativeModel(model_str)
+            safety_settings = [
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "threshold": "BLOCK_NONE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "threshold": "BLOCK_NONE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "threshold": "BLOCK_NONE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "threshold": "BLOCK_NONE"
+                },
+            ]
+            response = model.generate_content(question, generation_config=genai.types.GenerationConfig(temperature=temp), safety_settings=safety_settings)
+            #print(response.text)
 
-        # Debugging output
-        print("Response object:", response)
-        
-        for chunk in response:
-            print(chunk.text)
-            res += chunk.text
-        return res
+            # Debugging output
+            print("Response object:", response)
+            
+            for chunk in response:
+                print(chunk.text)
+                res += chunk.text
+            return res
+        except ValueError as e:
+            # If a ValueError is raised, add "<answer>NaN<answer>" to the response and continue
+            print(f"Exception caught: {e}")
+            return "<answer>NaN<answer>"
 
 if __name__ == '__main__':
     api = GeminiAIAPI()
