@@ -53,7 +53,7 @@ class GeminiAIAPI(object):
         except ValueError as e:
             # If a ValueError is raised, add "<answer>NaN<answer>" to the response and continue
             print(f"Exception caught: {e}")
-            return "<answer>NaN<answer>"
+            return "<answer>NaN</answer>"
 
 if __name__ == '__main__':
     api = GeminiAIAPI()
