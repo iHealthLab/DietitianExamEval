@@ -114,6 +114,16 @@ class QuestionsMysql:
         return prompt
     
     # Get CoT prompt in a batch of questions
+    def get_rag_prompt_string(self, dictionary, startIndex, batch_size, selected_chunk_str):
+        prompt = "Instructions: Solve the following multiple choice question based on the information provided below. Output a single option as the final answer and enclosed by xml tags <answer></answer> \n"
+        for i in range(startIndex, startIndex + batch_size):
+            if(i > len(dictionary)):
+                return prompt
+            question = dictionary[i]
+            prompt += str(question['question_id']) + ". " + question['question'] + "\n" + question['choices'] + "\n" + selected_chunk_str
+        return prompt
+    
+    # Get pt case prompt in a batch of questions
     def get_pt_case_prompt_string(self, dictionary, startIndex, batch_size):
         prompt = "Imaging you are a registered dietitian who sees patient for nutrition counseling sessions and remotely monitoring the patient's blood glucose management. Your job is to come up with a treatment plan to address the high A1C status for the patient based on the subjective information, objective information, and the assessment provided. \n\nHere are a few examples of the patient cases with subjective information, objective information, assessment and the treatment plan: \nExample 1:"
         prompt += dictionary[1]['patient_info_assessment'] + "\n\n" + dictionary[1]['plan'] + "\n\nExample 2: \n"
