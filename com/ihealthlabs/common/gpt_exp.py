@@ -7,7 +7,7 @@ qsql = questions_mysql.QuestionsMysql()
 # Connect to RD Exam Questions
 question_dict = qsql.get_RD_questions()
 
-for i in range(8, 16):  
+for i in range(16, 18):  
     file_name = f'gpt_4o_sc_cot_exp{i}.txt'
     with open(file_name, 'w') as file:
         pass

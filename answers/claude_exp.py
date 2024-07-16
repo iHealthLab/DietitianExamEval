@@ -1,15 +1,17 @@
 import anthropic_bedrock_api
 import questions_mysql
 import time
+from datetime import datetime
 
 api = anthropic_bedrock_api.AnthropicBedRockAPI()
 qsql = questions_mysql.QuestionsMysql()
 # Connect to RD Exam Questions
 question_dict = qsql.get_RD_questions()
 
+prefix = str(datetime.now())
 
-for i in range(1, 3):  
-    file_name = f'claude_3.5_sonnet_sc_cot_exp{i}.txt'
+for i in range(8, 16):  
+    file_name = f'{prefix}_claude_3.5_sonnet_sc_cot_exp{i}.txt'
     with open(file_name, 'w') as file:
         pass
 
