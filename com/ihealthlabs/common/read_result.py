@@ -6,7 +6,7 @@ qsql = questions_mysql.QuestionsMysql()
 question_dict = qsql.get_RD_questions()
 
 # Get the LLM's response from the txt file
-with open('gemini_1.5_pro_sc_cot_exp15.txt', 'r') as file:
+with open('gpt_4o_rag_test_run1.txt', 'r') as file:
         content = file.read()
 
 # Get the answer list and score
@@ -17,7 +17,7 @@ if len(choices) == 1050:
     print(score4)
 
     # Save answer list and score to the txt file
-    with open('gemini_1.5_pro_sc_cot_exp15.txt', 'w') as file:
+    with open('gpt_4o_rag_test_run1.txt', 'w') as file:
         file.write(content + "Answer List: \n" + answers + "\n" + score4)
 else:
     # Find the missed answer

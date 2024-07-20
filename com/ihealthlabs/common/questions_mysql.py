@@ -113,7 +113,7 @@ class QuestionsMysql:
             prompt += str(question['question_id']) + ". " + question['question'] + "\n" + question['choices'] + "\n"
         return prompt
     
-    # Get CoT prompt in a batch of questions
+    # Get RAG prompt in a batch of questions
     def get_rag_prompt_string(self, dictionary, startIndex, batch_size, selected_chunk_str):
         prompt = "Instructions: Solve the following multiple choice question based on the information provided below. Output a single option as the final answer and enclosed by xml tags <answer></answer> \n"
         for i in range(startIndex, startIndex + batch_size):
@@ -122,6 +122,17 @@ class QuestionsMysql:
             question = dictionary[i]
             prompt += str(question['question_id']) + ". " + question['question'] + "\n" + question['choices'] + "\n" + selected_chunk_str
         return prompt
+
+    # Get RAG + CoT prompt in a batch of questions
+    def get_rag_cot_prompt_string(self, dictionary, startIndex, batch_size, selected_chunk_str):
+        prompt = "Instructions: Solve the following multiple choice question in a step-by-step fashion based on the information provided below, starting by summarizing the available information. Output a single option as the final answer and enclosed by xml tags <answer></answer> \n"
+        for i in range(startIndex, startIndex + batch_size):
+            if(i > len(dictionary)):
+                return prompt
+            question = dictionary[i]
+            prompt += str(question['question_id']) + ". " + question['question'] + "\n" + question['choices'] + "\n" + selected_chunk_str
+        return prompt
+    
     
     # Get pt case prompt in a batch of questions
     def get_pt_case_prompt_string(self, dictionary, startIndex, batch_size):

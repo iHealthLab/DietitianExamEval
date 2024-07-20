@@ -2,7 +2,7 @@ import ast
 import pandas as pd
 import numpy as np
 import sys
-sys.path.append('/Users/mohanqi/vscode/ai/ai-benchmark/com/ihealthlabs/common')
+sys.path.append('/ai-benchmark/com/ihealthlabs/common')
 import openai_api
 from questions_mysql import QuestionsMysql
 
@@ -47,19 +47,22 @@ if __name__ == '__main__':
     api = openai_api.OpenAIAPI()
 
     # Load knowledge dataframe (chunks)
-    FILE_PATH = '/Users/mohanqi/vscode/ai/ai-benchmark/rag_rd_exam/chunks_df_sample.csv'
+    FILE_PATH = '/ai-benchmark/rag_rd_exam/chunks_df_updated1.csv'
     columns_to_read = ['chunk', 'chunk_embedding']
     df_knowledge = pd.read_csv(FILE_PATH, usecols=columns_to_read)
+
+    # Obtain the embedding of the question using the embedding model
+    dimensions = 1024
+    normalize = True
+
+    titan_embeddings_v2 = TitanEmbeddings(model_id="amazon.titan-embed-text-v2:0")
+
+    with open('gpt_4o_rag_test_run1.txt', 'w') as file:
+        pass
 
     response = "\n"
     for startIndex in range (1, len(question_dict) + 1, 1):
         query = question_dict[startIndex]['question'] + question_dict[startIndex]['choices']
-
-        # Obtain the embedding of the question using the embedding model
-        dimensions = 1024
-        normalize = True
-
-        titan_embeddings_v2 = TitanEmbeddings(model_id="amazon.titan-embed-text-v2:0")
 
         input_text = query
         query_embeddings = titan_embeddings_v2(input_text, dimensions, normalize)
@@ -71,15 +74,15 @@ if __name__ == '__main__':
         # Covert the selected chunks to string to be added to the prompt
         selected_chunks_str = np.array2string(selected_chunks, separator=', ')
 
-        with open('gpt_4o_rag_test.txt', 'r') as file:
+        with open('gpt_4o_rag_test_run1.txt', 'r') as file:
             content = file.read()
 
         prompt_str = qsql.get_rag_prompt_string(question_dict, startIndex, 1, selected_chunks_str)
 
-        response += api.ask_chatgpt(prompt_str, "gpt-4o", 0)
+        response = api.ask_chatgpt(prompt_str, "gpt-4o", 0)
         response += "\n"
 
-        with open('gpt_4o_rag_test.txt', 'w') as file:
+        with open('gpt_4o_rag_test_run1.txt', 'w') as file:
             file.write(content + prompt_str + "\n" + response + "\n\n\n")
 
     

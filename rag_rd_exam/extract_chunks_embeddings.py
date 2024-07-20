@@ -5,7 +5,7 @@ from embedding import TitanEmbeddings
 
 if __name__ == '__main__':
     # Load the knowledge dataframe (chunks)
-    file_path = '/Users/mohanqi/vscode/ai/ai-benchmark/rag_rd_exam/chunks_df_updated.csv'
+    file_path = '/ai-benchmark/rag_rd_exam/chunks_df_updated1.csv'
     df_knowledge = pd.read_csv(file_path)
 
     # Check if 'chunk_embedding' column exists; if not, create it
