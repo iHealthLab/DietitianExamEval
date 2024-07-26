@@ -1,10 +1,12 @@
 import ast
 import pandas as pd
 import numpy as np
+import os
 import sys
 sys.path.append('/ai-benchmark/com/ihealthlabs/common')
 import openai_api
 from questions_mysql import QuestionsMysql
+import csv
 
 from sklearn.metrics.pairwise import cosine_similarity
 from embedding import TitanEmbeddings
@@ -13,7 +15,7 @@ from embedding import TitanEmbeddings
 def find_most_similar_chunks(
         query_embedding: list,
         df: pd.DataFrame,
-        number_of_chunks: int = 10) -> np.ndarray:
+        number_of_chunks: int = 3) -> np.ndarray:
     """
     Search for the most similar chunks
     
@@ -44,7 +46,7 @@ if __name__ == '__main__':
     # Connect to RD Exam Questions
     question_dict = qsql.get_RD_questions()
 
-    api = openai_api.OpenAIAPI()
+    #api = openai_api.OpenAIAPI()
 
     # Load knowledge dataframe (chunks)
     FILE_PATH = '/ai-benchmark/rag_rd_exam/chunks_df_updated1.csv'
@@ -56,7 +58,32 @@ if __name__ == '__main__':
     normalize = True
 
     titan_embeddings_v2 = TitanEmbeddings(model_id="amazon.titan-embed-text-v2:0")
+   
+    results_df = pd.DataFrame(columns=['question_id', 'top_3_similar_chunks'])
 
+    data = []
+    for startIndex in range (1, len(question_dict) + 1, 1):
+        query = question_dict[startIndex]['question'] + question_dict[startIndex]['choices']
+
+        input_text = query
+        query_embeddings = titan_embeddings_v2(input_text, dimensions, normalize)
+
+        # Cosine similarity
+        selected_chunks = find_most_similar_chunks(query_embeddings, df_knowledge)
+        # Covert the selected chunks to string to be added to the prompt
+        selected_chunks_str = np.array2string(selected_chunks, separator=', ')
+        data.append({'question_id': startIndex, 'top_3_similar_chunks': selected_chunks_str})
+        print(f"Processed {startIndex}/{len(question_dict)}")
+
+    # Create a DataFrame from the new data
+    results_df = pd.DataFrame(data)
+
+    # Save the DataFrame to a new CSV file
+    new_file_path = '/ai-benchmark/real_top_3_similar_chunks.csv'
+    results_df.to_csv(new_file_path, index=False)
+    print("Completed.")
+
+    '''
     with open('gpt_4o_rag_test_run1.txt', 'w') as file:
         pass
 
@@ -84,7 +111,7 @@ if __name__ == '__main__':
 
         with open('gpt_4o_rag_test_run1.txt', 'w') as file:
             file.write(content + prompt_str + "\n" + response + "\n\n\n")
-
+    '''
     
 
 

@@ -16,7 +16,7 @@ def check_missing_answers(filename):
     return missing_answers
 
 # Usage
-filename = 'gemini_1.5_pro_sc_cot_exp15.txt'  # Replace with your file name
+filename = 'claude_3.5_sonnet_rag_top_3_exp1.txt'  # Replace with your file name
 missing_answers = check_missing_answers(filename)
 
 if missing_answers:

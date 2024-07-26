@@ -14,15 +14,15 @@ question_dict = qsql.get_RD_questions()
 api = openai_api.OpenAIAPI()
 
 # Get the extracted similar chunks
-FILE_PATH = '/ai-benchmark/rag_rd_exam/extracted_string.csv'
+FILE_PATH = '/ai-benchmark/rag_rd_exam/extracted_string_10_and_3.csv'
 df = pd.read_csv(FILE_PATH)
 similar_chunks_list = []
 for index, row in df.iterrows():
     #question_id = row['question_id']
-    similar_chunks_list.append(row['top_10_similar_chunks'])
+    similar_chunks_list.append(row['top_3_similar_chunks'])
 
-for i in range(3, 6):  
-    file_name = f'gpt_4o_rag_exp{i}.txt'
+for i in range(1, 2):  
+    file_name = f'gpt_4o_rag_top_3_exp{i}.txt'
     with open(file_name, 'w') as file:
         pass
 
