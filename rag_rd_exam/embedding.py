@@ -1,12 +1,35 @@
+"""
+This module provides an interface to obtain embeddings using the Amazon Titan Embeddings V2 service.
+"""
 import json
 import boto3
+
 class TitanEmbeddings(object):
+    """
+    A class to obtain embeddings from the Amazon Titan Embeddings V2 service.
+
+    Attributes:
+        accept (str): The accepted response format.
+        content_type (str): The content type of the request.
+        bedrock (boto3.Client): The Boto3 client for interacting with Bedrock runtime.
+        model_id (str): The model ID for generating embeddings.
+
+    Methods:
+        __call__(text, dimensions, normalize=True): Returns the embeddings for the given text.
+    """
     accept = "application/json"
     content_type = "application/json"
-    
+
     def __init__(self, model_id="amazon.titan-embed-text-v2:0"):
+        """
+        Initializes the TitanEmbeddings class with a specified model ID.
+
+        Parameters:
+            model_id (str): The ID of the model to use for embedding.
+        """
         self.bedrock = boto3.client(service_name='bedrock-runtime', region_name="us-west-2")
         self.model_id = model_id
+
     def __call__(self, text, dimensions, normalize=True):
         """
         Returns Titan Embeddings
@@ -28,18 +51,3 @@ class TitanEmbeddings(object):
         )
         response_body = json.loads(response.get('body').read())
         return response_body['embedding']
-
-if __name__ == '__main__':
-    """
-    Entrypoint for Amazon Titan Embeddings V2 - Text example.
-    """
-    dimensions = 1024
-    normalize = True
-    
-    titan_embeddings_v2 = TitanEmbeddings(model_id="amazon.titan-embed-text-v2:0")
-
-    input_text = "What are the different services that you offer?"
-    embedding = titan_embeddings_v2(input_text, dimensions, normalize)
-    
-    print(f"{input_text=}")
-    print(f"{embedding[:10]=}")

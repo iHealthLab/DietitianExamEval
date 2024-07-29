@@ -1,3 +1,6 @@
+"""
+This module provides a logging configuration class for applications.
+"""
 import logging
 import os
 import re
@@ -5,8 +8,24 @@ from logging.handlers import TimedRotatingFileHandler
 
 
 class Log:
+    """
+    A class for configuring and managing logging for the application.
+
+    Attributes:
+        path (str): The directory path where log files will be stored.
+        logger (logging.Logger): The main logger object.
+
+    Methods:
+        get_logger(): Returns the logger instance.
+    """
 
     def __init__(self, name=None):
+        """
+        Initializes the Log class, setting up the directory and configuring log handlers.
+
+        Parameters:
+            name (str, optional): The name of the log directory. Defaults to 'log'.
+        """
         self.path = 'log'
         if name:
             self.path = os.path.join(self.path, name)
@@ -43,4 +62,10 @@ class Log:
             self.logger.addHandler(ch)
 
     def get_logger(self):
+        """
+        Returns the logger instance.
+
+        Returns:
+        - logging.Logger: The configured logger instance.
+        """
         return self.logger
