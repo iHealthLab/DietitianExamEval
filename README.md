@@ -5,7 +5,7 @@ This repository contains the codes and steps to sending RD Exam questions to GPT
 ## Step 1: Prepare the Dataset & Set up
 This repository doesn't contain any original exam questions we used for the experiements. You will need to have your own multiple choice questions ready in MySQL Workbench database with at least question_id, question, choices and answer columns for each question. Other setup instructions are listed in LLMs_multiple_choice_eval.ipynb under Set Up section. 
 
-## Step 2: Connect to the Database and Get the Question One-by-One
+## Step 2: Connect to the Database and Get the Question
 Once you have your dataset ready, you can connect to your database by using the codes in conn_mysql.py and save your database info to the .env file. Detailed steps and .env file template can be found in LLMs_multiple_choice_eval.ipynb. 
 
 ## Extra Step for RAP
