@@ -75,6 +75,8 @@ if __name__ == '__main__':
             df = pdf_to_chunks(DIR_PATH, ref, df)
         except Exception as e:
             refs_with_error.append(ref)
+            print('Error found in text chunking:')
+            print(e)
     with open('error_list.txt', 'w') as file:
         for item in refs_with_error:
             file.write(f"{item}\n")

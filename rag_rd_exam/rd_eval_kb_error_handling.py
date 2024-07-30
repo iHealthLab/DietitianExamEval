@@ -1,44 +1,7 @@
 import os
-#  from pdfminer.high_level import extract_text
-import math
-from typing import List
 import pandas as pd
 import PyPDF2
-
-
-def get_references_list(dir_path: str) -> List[str]:
-    """
-    Extract the list of PDF files in the directory.
-    
-    Args:
-        dir_path (str): The directory including references.
-    
-    Returns:
-        pdf_files (List[str]): The list of PDF files in the directory.
-    """
-    files = os.listdir(dir_path)
-    pdf_files = [file for file in files if file.lower().endswith('.pdf')]
-    pdf_files.sort()
-    return pdf_files
-
-
-def text_to_chunks(text: str,
-                   tokens_per_chunk: int = 512,
-                   chars_per_token: float = 4.7) -> List[str]:
-    """
-    Split the input text into chunks
-    
-    Args:
-        text (str): the input text.
-        tokens_per_chunk (int): The number of tokens per chunk.
-        chars_per_token (float): The average number of characters per token.
-    
-    Returns:
-        chunks (List[str]): A list of chunks.
-    """
-    chars_per_chunk = math.ceil(tokens_per_chunk * chars_per_token)
-    chunks = [text[i:i+chars_per_chunk] for i in range(0, len(text), chars_per_chunk)]
-    return chunks
+from pdf_to_chunks import text_to_chunks
 
 
 def pdf_read(dir_path: str, file_name: str) -> str:

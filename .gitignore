@@ -6,6 +6,9 @@ target/
 !**/src/test/**/target/
 .venv/
 .env
+env/
+venv/
+ENV/
 log/
 
 ### STS ###
@@ -37,12 +40,28 @@ build/
 .vscode/
 /*/src/main/resources/application-*.yml
 src/main/resources/application-*.yml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+.pdm.toml
+.pdm-python
+.pdm-build/
+
 #### Generated ####gi
 api/generates/index.ts
 generates/index.ts
 *.log
 generates/*
 
-.DS_Store
+__pypackages__/
+
+**.txt
+**.csv
+**.pdf
+**.DS_Store
 .java-version
 
