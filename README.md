@@ -25,7 +25,7 @@ When the prompt message with instruction and question is ready, the prompt is se
 After the txt file containing the LLM's responses to the questions is obtained, we extract the answers provided within xml tags. In some occassions, the LLMs may not provide an appropriate answer: e.g., providing an answer in other format or an irrelavant answer. We examine these responses manually. We run the codes to extract the answers, and the final list of LLM's choices to the question will then be saved to the original txt file. Detailed instructions and codes can be found in [LLMs multiple choice eval](LLMs_multiple_choice_eval.ipynb).
 
 
-## Evaluate the LLM responses in terms of accuracy and consistency
+## Evaluate the LLM Responses in Terms of Accuracy and Consistency
 [LLM Response Analysis](LLM_response_analysis_pub.ipynb) includes code to assess the responses and perform statistical analysis. The evaluation of responses is based on two key metrics: accuracy and consistency. Accuracy assess how closely a set of responses aligns with the ground truth answers. To this end, the responses are initially imported and compared with the ground truth answers. Consistency measures the extent to which responses produce the same results. Our analysis is divided into four different parts.
 
 1) **Overall Accuracy:** We calculate the percentage scores by determining the ratio of correct responses to total responses and multiplying by 100. The percentage score reflects the ability of the LLMs to identify the correct option. Each measurement is repeated five times. The five repeated measurements in each test are grouped, and the mean and standard deviation of the scores are calculated.
