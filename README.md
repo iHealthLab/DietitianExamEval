@@ -1,5 +1,9 @@
-# RD Exam Eval
-This repository contains the codes and steps to sending RD Exam questions to GPT 4o, Claude 3.5 - Sonnet, and Gemini 1.5 Pro with Zero Shot (ZS), Chain of Thought (CoT), Chain of Thought with Self Consistency (CoT-SC), and Retrieval Augmented Prompting (RAP), and getting responses for analysis and comparison. 
+# Registered Dietitian (RD) Exam Evaluation
+This repository contains the codes to evaluate the accuracy and consistency of LLMs in addressing nutrition-related inquiries.  Our experiments include the GPT 4o, Claude 3.5 - Sonnet, and Gemini 1.5 Pro models along with Zero Shot (ZS), Chain of Thought (CoT), Chain of Thought with Self Consistency (CoT-SC), and Retrieval Augmented Prompting (RAP) techniques.
+
+To achieve this, we use the Registered Dietitian (RD) exam, a standard certification examination that serves to assess if dietitians meet the qualifications required to practice in the dietetics and nutrition field. Our experiments include the GPT 4o, Claude 3.5 - Sonnet, and Gemini 1.5 Pro models along with Zero Shot (ZS), Chain of Thought (CoT), Chain of Thought with Self Consistency (CoT-SC), and Retrieval Augmented Prompting (RAP) techniques. This evaluation includes 1050 multiple-choice questions with different proficiency levels, covering four nutrition domains: i.e., principles of dietetics, nutrition care, food service systems, and food and nutrition management.
+
+We compare the responses with the ground truth answers, enabling an objective assessment of the models' performance. To examine the consistency of the responses, we conduct repeated measurements by presenting each model with the same set of questions five times using each prompting technique. The responses for each technique and model are compared within and across groups.
 
 
 ## Step 1: Prepare the Dataset & Set up
